@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<link rel=stylesheet href={{assets}}/SCCoPIFO.css>
+<script type=text/javascript src={{assets}}/pack-it-forms.js></script>
+<title>Allied Health Status Report</title>
+<packet-form>
+  <form-roo form-title="Allied Health Status Report" paper-version="PDF: 20260418">
+    <form-dthtf
+      to-ics-positions="Health Care Liaison; EMS Unit; Public Health Unit; Medical Health Branch; Operations Section"
+      to-locations="PHDOC; County EOC"></form-dthtf>
+    <div class=section>Facility Status</div>
+    <div class="layout-grid" style="--columns: max-content 1fr max-content 1fr">
+      <div class="pair">
+        <label for=21.>21. Facility Name:</label>
+        <input id=21. name=21. required style="{{w-21.}}">
+      </div>
+      <div class="pair">
+        <label for=22.>22. Facility Type:</label>
+        <input id=22. name=22. style="{{w-22.}}">
+      </div>
+    </div>
+    <div class=layout-grid style="--columns: repeat(3, max-content) 1fr">
+      <div class="pair colspan4">
+        <div class=label>23. EOC Status:</div>
+        <div class="subgrid colspan3">
+          <label><input type=radio name=23. value=Activated style="{{w-23.}}">a. Activated</label>
+          <label><input type=radio name=23. value=Monitoring style="{{w-23.}}">b. Monitoring</label>
+          <label><input type=radio name=23. value="Not Activated" style="{{w-23.}}">c. Not Activated</label>
+        </div>
+      </div>
+      <div class="pair colspan4 rowspan2">
+        <div class="label rowspan2">24. Operational Status:</div>
+        <div class="subgrid colspan3 rowspan2">
+          <label><input type=radio name=24. value="Fully Operational" style="{{w-24.}}">a. Fully Operational</label>
+          <label><input type=radio name=24. value="Limited Services" style="{{w-24.}}">b. Limited Services</label>
+          <div></div>
+          <label><input type=radio name=24. value=Closed style="{{w-24.}}">c. Closed</label>
+          <label><input type=radio name=24. value=Evacuating style="{{w-24.}}">d. Evacuating</label>
+          <label><input type=radio name=24. value="Shelter in Place" style="{{w-24.}}">e. Shelter in Place</label>
+        </div>
+      </div>
+    </div>
+    <div class="layout-vertical border padlr">
+      <label for=25.>25. If you are not fully operational, please indicate additional details:</label>
+      <textarea id=25. name=25. style="{{w-25.}}"></textarea>
+    </div>
+    <div class=section>Facility Contact Information</div>
+    <div class="layout-grid" style="--columns: max-content max-content 1fr">
+      <div class="subgrid border padlr colgap colspan3 basealign">
+        <label for=31.>31. Facility EOC:</label>
+        <div class=annotation>(Phone #, Fax, Email)</div>
+        <input id=31. name=31. style="{{w-31.}}">
+      </div>
+      <div class="subgrid border padlr colgap colspan3 basealign">
+        <label for=32.>32. Facility Medical Health Branch /<br>Public Health Liaison:</label>
+        <div class=annotation>(Name, Phone #, Email)</div>
+        <input id=32. name=32. style="{{w-32.}}">
+      </div>
+      <div class="subgrid border padlr colgap colspan3 basealign">
+        <label for=33.>33. Facility Information Officer:</label>
+        <div class=annotation>(Name, Phone #, Email)</div>
+        <input id=33. name=33. style="{{w-33.}}">
+      </div>
+    </div>
+    <div class=section>Facility Patient Flow Information</div>
+    <div class="layout-grid" style="--columns: max-content max-content 1fr max-content 1fr">
+      <div class="subsec">41. Current Census</div>
+      <div class="pair">
+        <label for=41a.>a. Total Residents:</label>
+        <input id=41a. name=41a. class=cardinalNumber style="{{w-41a.}}">
+      </div>
+      <div class="pair">
+        <label for=41b.>b. Patients Currently on Site:</label>
+        <input id=41b. name=41b. class=cardinalNumber style="{{w-41b.}}">
+      </div>
+    </div>
+    <div class="layout-grid" style="--columns: max-content 1fr max-content 1fr">
+      <div class="pair">
+        <label for=42.>42. Patients Pending Evacuation:</label>
+        <input id=42. name=42. class=cardinalNumber style="{{w-42.}}">
+      </div>
+      <div class="pair">
+        <label for=43.>43. Patients Transferred Out:</label>
+        <input id=43. name=43. class=cardinalNumber style="{{w-43.}}">
+      </div>
+    </div>
+    <div class="layout-pair">
+      <div class="pair">
+        <label for=44.>44. Incident-Related Injuries (If Applicable):</label>
+        <input id=44. name=44. style="{{w-44.}}">
+      </div>
+      <div class="pair">
+        <label for=45.>45. Other Patient Care Impacts</label>
+        <input id=45. name=45. style="{{w-45.}}">
+      </div>
+    </div>
+    <div class=section style="display:flex;justify-content:space-between;align-items:center">
+      <span>SNF Care Status by Bed Type</span>
+      <span class=annotation>* Surge: # of beds in addition to vacant available beds</span>
+    </div>
+    <div class=layout-grid style="--columns: 2fr repeat(5, 1fr) 2fr">
+      <div></div>
+      <div class="label border" style="text-align:center">Staffed<br>Beds M</div>
+      <div class="label border" style="text-align:center">Staffed<br>Beds F</div>
+      <div class="label border" style="text-align:center">Vacant<br>Beds M</div>
+      <div class="label border" style="text-align:center">Vacant<br>Beds F</div>
+      <div class="label" style="text-align:center;align-self:center">* Surge #</div>
+      <div class="label border" style="text-align:center">Accepting Admissions<br>(Yes, No, Limited)</div>
+      <div class=subsec>50. Skilled Nursing</div>
+      <div class="border padlr">
+        <label for=50a.>a. <input id=50a. name=50a. class=cardinalNumber style="{{w-50a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=50b.>b. <input id=50b. name=50b. class=cardinalNumber style="{{w-50b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=50c.>c. <input id=50c. name=50c. class=cardinalNumber style="{{w-50c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=50d.>d. <input id=50d. name=50d. class=cardinalNumber style="{{w-50d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=50e.>e. <input id=50e. name=50e. class=cardinalNumber style="{{w-50e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=50f.>f. <combo-box name=50f. options="Yes;No;Limited" style="{{w-50f.}}"></combo-box></label>
+      </div>
+      <div class=subsec>51. Assisted Living</div>
+      <div class="border padlr">
+        <label for=51a.>a. <input id=51a. name=51a. class=cardinalNumber style="{{w-51a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=51b.>b. <input id=51b. name=51b. class=cardinalNumber style="{{w-51b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=51c.>c. <input id=51c. name=51c. class=cardinalNumber style="{{w-51c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=51d.>d. <input id=51d. name=51d. class=cardinalNumber style="{{w-51d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=51e.>e. <input id=51e. name=51e. class=cardinalNumber style="{{w-51e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=51f.>f. <combo-box name=51f. options="Yes;No;Limited" style="{{w-51f.}}"></combo-box></label>
+      </div>
+      <div class=subsec>52. Sub-Acute</div>
+      <div class="border padlr">
+        <label for=52a.>a. <input id=52a. name=52a. class=cardinalNumber style="{{w-52a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=52b.>b. <input id=52b. name=52b. class=cardinalNumber style="{{w-52b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=52c.>c. <input id=52c. name=52c. class=cardinalNumber style="{{w-52c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=52d.>d. <input id=52d. name=52d. class=cardinalNumber style="{{w-52d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=52e.>e. <input id=52e. name=52e. class=cardinalNumber style="{{w-52e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=52f.>f. <combo-box name=52f. options="Yes;No;Limited" style="{{w-52f.}}"></combo-box></label>
+      </div>
+      <div class=subsec>53. Alzheimers/Dementia</div>
+      <div class="border padlr">
+        <label for=53a.>a. <input id=53a. name=53a. class=cardinalNumber style="{{w-53a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=53b.>b. <input id=53b. name=53b. class=cardinalNumber style="{{w-53b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=53c.>c. <input id=53c. name=53c. class=cardinalNumber style="{{w-53c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=53d.>d. <input id=53d. name=53d. class=cardinalNumber style="{{w-53d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=53e.>e. <input id=53e. name=53e. class=cardinalNumber style="{{w-53e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=53f.>f. <combo-box name=53f. options="Yes;No;Limited" style="{{w-53f.}}"></combo-box></label>
+      </div>
+      <div class=subsec>54. Pediatric Sub-Acute</div>
+      <div class="border padlr">
+        <label for=54a.>a. <input id=54a. name=54a. class=cardinalNumber style="{{w-54a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=54b.>b. <input id=54b. name=54b. class=cardinalNumber style="{{w-54b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=54c.>c. <input id=54c. name=54c. class=cardinalNumber style="{{w-54c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=54d.>d. <input id=54d. name=54d. class=cardinalNumber style="{{w-54d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=54e.>e. <input id=54e. name=54e. class=cardinalNumber style="{{w-54e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=54f.>f. <combo-box name=54f. options="Yes;No;Limited" style="{{w-54f.}}"></combo-box></label>
+      </div>
+      <div class=subsec>55. Psychiatric</div>
+      <div class="border padlr">
+        <label for=55a.>a. <input id=55a. name=55a. class=cardinalNumber style="{{w-55a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=55b.>b. <input id=55b. name=55b. class=cardinalNumber style="{{w-55b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=55c.>c. <input id=55c. name=55c. class=cardinalNumber style="{{w-55c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=55d.>d. <input id=55d. name=55d. class=cardinalNumber style="{{w-55d.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=55e.>e. <input id=55e. name=55e. class=cardinalNumber style="{{w-55e.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=55f.>f. <combo-box name=55f. options="Yes;No;Limited" style="{{w-55f.}}"></combo-box></label>
+      </div>
+    </div>
+    <div class=section>Available Resources</div>
+    <div class=layout-grid style="--columns: repeat(5, 1fr)">
+      <div></div>
+      <div class="label border" style="text-align:center">Vacant Chairs / Rooms</div>
+      <div class="label border" style="text-align:center">Front Desk Staff</div>
+      <div class="label border" style="text-align:center">Medical Support Staff</div>
+      <div class="label border" style="text-align:center">Provider Staff</div>
+      <div class=subsec>60. Dialysis</div>
+      <div class="border padlr">
+        <label for=60a.>a. <input id=60a. name=60a. class=cardinalNumber style="{{w-60a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=60b.>b. <input id=60b. name=60b. class=cardinalNumber style="{{w-60b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=60c.>c. <input id=60c. name=60c. class=cardinalNumber style="{{w-60c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=60d.>d. <input id=60d. name=60d. class=cardinalNumber style="{{w-60d.}}"></label>
+      </div>
+      <div class=subsec>61. Surgical</div>
+      <div class="border padlr">
+        <label for=61a.>a. <input id=61a. name=61a. class=cardinalNumber style="{{w-61a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=61b.>b. <input id=61b. name=61b. class=cardinalNumber style="{{w-61b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=61c.>c. <input id=61c. name=61c. class=cardinalNumber style="{{w-61c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=61d.>d. <input id=61d. name=61d. class=cardinalNumber style="{{w-61d.}}"></label>
+      </div>
+      <div class=subsec>62. Clinic</div>
+      <div class="border padlr">
+        <label for=62a.>a. <input id=62a. name=62a. class=cardinalNumber style="{{w-62a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=62b.>b. <input id=62b. name=62b. class=cardinalNumber style="{{w-62b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=62c.>c. <input id=62c. name=62c. class=cardinalNumber style="{{w-62c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=62d.>d. <input id=62d. name=62d. class=cardinalNumber style="{{w-62d.}}"></label>
+      </div>
+      <div class=subsec>63. Home Health</div>
+      <div class="border padlr">
+        <label for=63a.>a. <input id=63a. name=63a. class=cardinalNumber style="{{w-63a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=63b.>b. <input id=63b. name=63b. class=cardinalNumber style="{{w-63b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=63c.>c. <input id=63c. name=63c. class=cardinalNumber style="{{w-63c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=63d.>d. <input id=63d. name=63d. class=cardinalNumber style="{{w-63d.}}"></label>
+      </div>
+      <div class=subsec>64. Adult Day Center</div>
+      <div class="border padlr">
+        <label for=64a.>a. <input id=64a. name=64a. class=cardinalNumber style="{{w-64a.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=64b.>b. <input id=64b. name=64b. class=cardinalNumber style="{{w-64b.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=64c.>c. <input id=64c. name=64c. class=cardinalNumber style="{{w-64c.}}"></label>
+      </div>
+      <div class="border padlr">
+        <label for=64d.>d. <input id=64d. name=64d. class=cardinalNumber style="{{w-64d.}}"></label>
+      </div>
+    </div>
+    <div class="layout-vertical border padlr">
+      <label for=65.>65. Resource Needs:</label>
+      <textarea id=65. name=65. style="{{w-65.}}"></textarea>
+    </div>
+  </form-roo>
+</packet-form>
