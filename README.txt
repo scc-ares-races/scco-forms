@@ -2,4 +2,8 @@
     This form has the same purpose and usage as the old Allied Health Facility
     Status form: reporting the status and capabilities of a non-hospital health
     care facility to the PHDOC.  However, the form is completely redesigned to
-    current standards.  It no longer requires a radio routing slip.
+    current standards.  It no longer requires a radio routing slip.  PackItForms
+    can still receive messages containing the old form.
+2026-04-19:  Corrected the field widths on the Hospital Status form.
+    The field widths while editing a Hospital Status message now match the
+    amount of space available on the printed form.
