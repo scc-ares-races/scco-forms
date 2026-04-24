@@ -1,9 +1,9 @@
 <def:combo-box name="Input control name attribute" options="List of dropdown values, separated by semicolons"
   required="Input is required" placeholder="String to display in input field before a value is entered"
   style="Control style" class="Control class name">
-  <div class="combobox combobox-list">
+  <div class="combobox combobox-list {{class}}">
     <div class="group">
-      <input id="{{name}}-input" {{name}} class="cb_edit {{class}}" {{placeholder}} {{required}} {{style}} role="combobox" aria-autocomplete="both" aria-expanded="false" aria-controls="{{name}}-listbox">
+      <input id="{{name}}-input" {{name}} class="cb_edit" {{placeholder}} {{required}} {{style}} role="combobox" aria-autocomplete="both" aria-expanded="false" aria-controls="{{name}}-listbox">
       <button type="button" id="{{name}}-button" aria-expanded="false" aria-controls="{{name}}-listbox" tabindex="-1">
         <svg width="18" height="16" aria-hidden="true" focusable="false" style="forced-color-adjust: auto">
           <polygon class="arrow" stroke-width="0" fill-opacity="0.75" fill="currentcolor" points="3,6 15,6 9,14"></polygon>
@@ -47,7 +47,7 @@
   paper-version="Paper form version number or date to put in the top banner." omistyle dmistyle rrstyle rsstyle opstyle
   ocstyle odstyle otstyle>
   <div id=form-header>
-    <div id=form-title>{{form-title}}</div>
+    <div id=form-title>{{form-title}} {{form-version}}</div>
     <div>PIF: {{form-version}}</div>
     <div>{{paper-version}}</div>
   </div>
