@@ -322,10 +322,11 @@ ul[role="listbox"] {
   display: none;
   box-sizing: border-box;
   border: 2px currentcolor solid;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
   font-size: 87.5%;
   cursor: pointer;
+  max-height: 15rem;
 }
 
 ul[role="listbox"] li[role="option"] {

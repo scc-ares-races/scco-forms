@@ -1,3 +1,10 @@
+2026-04-26:  Remove default values from all To ICS Position and To Location
+    fields of all forms.  They have drop-downs with suggested values, but no
+    value is pre-filled.
+
+2026-04-26:  Add all hospital names to the options for the Jurisdiction field
+    on the Resource Request form.
+
 2026-04-23:  Changed the appearance and behavior of the drop-down selections on
     all forms.
 

@@ -147,12 +147,12 @@
     </div>
     <div class=pair style="grid-area:3/2/4/4">
       <label for=7b.>7. Location:</label>
-      <if:to-ics-locations>
-        <combo-box name=7b. required options={{to-ics-locations}} style={{w-7b.}}></combo-box>
-      </if:to-ics-locations>
-      <ifnot:to-ics-locations>
+      <if:to-locations>
+        <combo-box name=7b. required options={{to-locations}} style={{w-7b.}}></combo-box>
+      </if:to-locations>
+      <ifnot:to-locations>
         <input id=7b. name=7b. required style={{w-7b.}}>
-      </ifnot:to-ics-locations>
+      </ifnot:to-locations>
     </div>
     <div class=pair style="grid-area:4/2/5/4">
       <label for=7c.>8. Name:</label>
@@ -333,12 +333,12 @@
             <tr>
               <th>Location:</th>
               <td style="padding-right:0;">
-                <if:to-ics-locations>
-                  <combo-box name="7b." tabindex=9 required options={{to-ics-locations}}></combo-box>
-                </if:to-ics-locations>
-                <ifnot:to-ics-locations>
+                <if:to-locations>
+                  <combo-box name="7b." tabindex=9 required options={{to-locations}}></combo-box>
+                </if:to-locations>
+                <ifnot:to-locations>
                   <input type=text name="7b." tabindex=9 required>
-                </ifnot:to-ics-locations>
+                </ifnot:to-locations>
               </td>
             </tr>
           </table>
@@ -429,12 +429,12 @@
             <tr>
               <th>Location:</th>
               <td style="padding-right:0;">
-                <if:to-ics-locations>
-                  <combo-box name="7b." tabindex=9 required options={{to-ics-locations}}></combo-box>
-                </if:to-ics-locations>
-                <ifnot:to-ics-locations>
+                <if:to-locations>
+                  <combo-box name="7b." tabindex=9 required options={{to-locations}}></combo-box>
+                </if:to-locations>
+                <ifnot:to-locations>
                   <input type=text name="7b." tabindex=9 required>
-                </ifnot:to-ics-locations>
+                </ifnot:to-locations>
               </td>
             </tr>
           </table>
