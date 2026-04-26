@@ -55,7 +55,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
-  value    "Public Works Group"
   choice   Public Works Group
   choice   Construction &amp; Eng. Branch
   choice   Operations
@@ -66,7 +65,7 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "7. To Location"
-  value    "County EOC"
+  choice   County EOC
   presence required
   width    32
   help     "This is the location of the recipient ICS position.  It is required."

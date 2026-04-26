@@ -55,7 +55,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
-  value    "EMS Unit"
   choice   EMS Unit
   choice   Medical Health Branch
   choice   Operations Section
@@ -65,7 +64,6 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "7. To Location"
-  value    PHDOC
   choice   PHDOC
   choice   County EOC
   presence required

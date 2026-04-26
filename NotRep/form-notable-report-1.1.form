@@ -54,7 +54,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
-  value    "Situational Analysis Unit"
   choice   Situational Analysis Unit
   choice   Common Operating Picture Spec.
   choice   Planning
@@ -65,7 +64,7 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "7. To Location"
-  value    "County EOC"
+  choice   County EOC
   presence required
   width    32
   help     "This is the location of the recipient ICS position.  It is required."

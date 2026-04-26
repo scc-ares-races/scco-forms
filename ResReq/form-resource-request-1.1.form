@@ -55,7 +55,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
-  value    "Resource Status & Tracking Unit"
   choice   Resource Status & Tracking Unit
   choice   Supply Branch
   choice   Logistics
@@ -66,7 +65,7 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "7. To Location"
-  value    "County EOC"
+  choice   County EOC
   presence required
   width    32
   help     "This is the location of the recipient ICS position.  It is required."
@@ -136,6 +135,19 @@ field 21.
   choice   Sunnyvale
   choice   Santa Clara County
   choice   County unincorporated
+  choice   El Camino Hospital Los Gatos
+  choice   El Camino Hospital Mountain View
+  choice   Good Samaritan Hospital
+  choice   Kaiser San Jose Medical Center
+  choice   Kaiser Santa Clara Hospital
+  choice   Lucile Packard Children's Hospital
+  choice   O'Connor Hospital
+  choice   Palo Alto Veterans Hospital
+  choice   Regional San Jose Medical Center
+  choice   Saint Louise Regional Hospital
+  choice   Stanford Hospital
+  choice   Stanford School of Medicine
+  choice   Valley Medical Center
   presence required
   help     "This is the name of the jurisdiction requesting resources.  It is required."
   pdf      text L 116.44 R 563.44 B 524.36 T 538.00 BL 527.40
