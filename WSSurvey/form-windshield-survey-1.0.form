@@ -39,7 +39,6 @@ field -
 field 5. handling
   label    Handling
   type     restricted
-  value    ROUTINE
   choice   IMMEDIATE
   choice   PRIORITY
   choice   ROUTINE
@@ -50,7 +49,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "To ICS Position"
-  value    "Damage/Safety Assessment Group"
   choice   Damage/Safety Assessment Group
   choice   Construction & Eng. Branch
   choice   Operations
@@ -59,7 +57,6 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "To Location"
-  value    "County EOC"
   presence required
   pdf      text L 142.12 R 299.32 B 620.12 T 633.28 BL 623.04
 

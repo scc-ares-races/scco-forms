@@ -41,7 +41,6 @@ field -
 field 5. handling
   label    Handling
   type     restricted
-  value    IMMEDIATE
   choice   IMMEDIATE
   choice   PRIORITY
   choice   ROUTINE
@@ -52,7 +51,6 @@ field 5. handling
 
 field 7a. toICSPosition
   label    "To ICS Position"
-  value    "Situational Analysis Unit"
   choice   Situational Analysis Unit
   choice   Common Operating Picture Spec.
   choice   Planning
@@ -61,7 +59,6 @@ field 7a. toICSPosition
 
 field 7b. toLocation
   label    "To Location"
-  value    "County EOC"
   presence required
   pdf      text L 142.12 R 299.32 B 622.88 T 635.92 BL 625.68
 
