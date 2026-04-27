@@ -287,6 +287,7 @@ textarea {
 
 .combobox-list {
   position: relative;
+  display: inline-block;
 }
 
 .combobox .group {
@@ -327,6 +328,7 @@ ul[role="listbox"] {
   font-size: 87.5%;
   cursor: pointer;
   max-height: 15rem;
+  z-index: 1;
 }
 
 ul[role="listbox"] li[role="option"] {

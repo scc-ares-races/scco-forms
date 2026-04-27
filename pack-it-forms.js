@@ -209,6 +209,14 @@ class ComboboxAutocomplete {
         this.listboxNode.appendChild(option)
       }
     }
+    if (this.filteredOptions.length < 2) {
+      this.filteredOptions = []
+      this.listboxNode.innerHTML = ''
+      for (var i = 0; i < this.allOptions.length; i++) {
+        this.filteredOptions.push(this.allOptions[i])
+        this.listboxNode.appendChild(this.allOptions[i])
+      }
+    }
     var numItems = this.filteredOptions.length
     if (numItems > 0) {
       this.firstOption = this.filteredOptions[0]
