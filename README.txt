@@ -1,3 +1,12 @@
+2026-05-01:  Revised Resource Request form.  Changed the Jurisdiction field to
+    Requesting Agency, since this form can be used by hospitals, county
+    departments, and others, not just jurisdictions.  Removed the drop-down
+    suggestions from the field.
+
+2026-05-01:  Revised Hospital Status form.  Split the Overall Hospital Census
+    field into two fields.  Put the Patient Flow fields in a more compact
+    layout.  Added a text entry for the Other option in Clinical Trends.
+
 2026-04-26:  Remove default values from all To ICS Position and To Location
     fields of all forms.  They have drop-downs with suggested values, but no
     value is pre-filled.
