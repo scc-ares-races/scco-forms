@@ -4,7 +4,7 @@ version  1.1
 title    Resource Request Form
 indef    a resource request form
 create   ResReq rr
-pdfFile  Resource_Request_v20260307.pdf
+pdfFile  Resource_Request_v20260501.pdf
 deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
 
 field MsgNo originMessageID
@@ -117,39 +117,9 @@ field 20. messageSummary
   pdf      text L 116.44 R 563.44 B 542.96 T 556.48 BL 546.00
 
 field 21.
-  label    "22. Jurisdiction"
-  choice   Campbell
-  choice   Cupertino
-  choice   Gilroy
-  choice   Los Altos
-  choice   Los Altos Hills
-  choice   Los Gatos
-  choice   Milpitas
-  choice   Monte Sereno
-  choice   Morgan Hill
-  choice   Mountain View
-  choice   Palo Alto
-  choice   San Jose
-  choice   Santa Clara (City)
-  choice   Saratoga
-  choice   Sunnyvale
-  choice   Santa Clara County
-  choice   County unincorporated
-  choice   El Camino Hospital Los Gatos
-  choice   El Camino Hospital Mountain View
-  choice   Good Samaritan Hospital
-  choice   Kaiser San Jose Medical Center
-  choice   Kaiser Santa Clara Hospital
-  choice   Lucile Packard Children's Hospital
-  choice   O'Connor Hospital
-  choice   Palo Alto Veterans Hospital
-  choice   Regional San Jose Medical Center
-  choice   Saint Louise Regional Hospital
-  choice   Stanford Hospital
-  choice   Stanford School of Medicine
-  choice   Valley Medical Center
+  label    "22. Requesting Agency"
   presence required
-  help     "This is the name of the jurisdiction requesting resources.  It is required."
+  help     "This is the name of the municipality, hospital, county department, or other agency requesting resources.  It is required."
   pdf      text L 116.44 R 563.44 B 524.36 T 538.00 BL 527.40
 
 field 22d. formDate

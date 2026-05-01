@@ -3,7 +3,7 @@
 <script type=text/javascript src={{assets}}/pack-it-forms.js></script>
 <title>Resource Request</title>
 <packet-form>
-  <form-roo form-title="Resource Request" paper-version="PDF: 20260307">
+  <form-roo form-title="Resource Request" paper-version="PDF: 20260501">
     <form-dthtf to-ics-positions="Resource Status &amp; Tracking Unit; Supply Branch; Logistics" to-locations="County EOC"></form-dthtf>
     <div class=section>Resource Order</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
@@ -12,10 +12,8 @@
         <input id=20. name=20. required class=colspan3 style="{{w-20.}}">
       </div>
       <div class="pair colspan4">
-        <label for=21.>22. Jurisdiction:</label>
-        <combo-box name=21. class=colspan3 style="{{w-21.}}" placeholder="Select one..." required
-          options="Campbell; Cupertino; Gilroy; Los Altos; Los Altos Hills; Los Gatos; Milpitas; Monte Sereno; Morgan Hill; Mountain View; Palo Alto; San Jose; Santa Clara (City); Saratoga; Sunnyvale; Santa Clara County; County unincorporated; El Camino Hospital Los Gatos; El Camino Hospital Mountain View; Good Samaritan Hospital; Kaiser San Jose Medical Center; Kaiser Santa Clara Hospital; Lucile Packard Children's Hospital; O'Connor Hospital; Palo Alto Veterans Hospital; Regional San Jose Medical Center; Saint Louise Regional Hospital; Stanford Hospital; Stanford School of Medicine; Valley Medical Center">
-        </combo-box>
+        <label for=21.>22. Requesting Agency:</label>
+        <input id=21. name=21. required class=colspan3 style="{{w-21.}}">
       </div>
       <div class=pair>
         <label for=22d.>23. Date:</label>
