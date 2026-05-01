@@ -3,7 +3,7 @@
 <script type=text/javascript src={{assets}}/pack-it-forms.js></script>
 <title>Hospital Status</title>
 <packet-form>
-  <form-roo form-title="Hospital Status" paper-version="PDF: 20260313">
+  <form-roo form-title="Hospital Status" paper-version="PDF: 20260501">
     <form-dthtf to-ics-positions="EMS Unit; Medical Health Branch; Operations Section"
       to-locations="PHDOC; County EOC"></form-dthtf>
     <div class="layout-pair">
@@ -147,17 +147,21 @@
       </div>
     </div>
     <div class=section>Patient Flow</div>
-    <div class="layout-pair">
+    <div class="layout-grid" style="--columns: max-content 1fr max-content 1fr">
       <div class="pair">
-        <label for=14.6.>41. Overall Hospital Census (Occupied<br>beds/total staffed beds):</label>
+        <label for=14.6.>41a. Overall Hospital Census —<br>Occupied Beds:</label>
         <input id=14.6. name=14.6. style="{{w-14.6.}}">
       </div>
       <div class="pair">
-        <label for=14.7.>42. Current ED Census (Patients<br>currently in ED):</label>
+        <label for=14.10.>41b. Overall Hospital Census —<br>Total Staffed Beds:</label>
+        <input id=14.10. name=14.10. style="{{w-14.10.}}">
+      </div>
+      <div class="pair">
+        <label for=14.7.>42. Current ED Census<br>(Patients currently in ED):</label>
         <input id=14.7. name=14.7. class=cardinal-number style="{{w-14.7.}}">
       </div>
       <div class="pair">
-        <label for=14.3.>43. Patients Treated and Released:</label>
+        <label for=14.3.>43. Patients Treated and<br>Released:</label>
         <input id=14.3. name=14.3. class=cardinal-number style="{{w-14.3.}}">
       </div>
       <div class="pair">
@@ -188,7 +192,8 @@
           <label><input type=checkbox name=17d. value=checked>d. Cardiac</label>
           <label><input type=checkbox name=17e. value=checked>e. Trauma</label>
           <label><input type=checkbox name=17f. value=checked>f. Behavioral Health</label>
-          <label><input type=checkbox name=17g. value=checked>g. Other</label>
+          <label for=17g.>g. Other:</label>
+          <input id=17g. name=17g. class=colspan2 style="{{w-17g.}}">
         </div>
       </div>
     </div>
