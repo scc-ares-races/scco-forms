@@ -90,7 +90,7 @@ field 8d. fromContact
 field 20. messageSummary
   label    Title
   presence required
-  pdf      text L 116.44 R 563.44 B 542.96 T 556.48 BL 546.00
+  pdf      text L  86.56 R 563.44 B 542.96 T 556.48 BL 546.00
 
 field 21.
   label    Jurisdiction
@@ -112,13 +112,13 @@ field 21.
   choice   Santa Clara County
   choice   County unincorporated
   presence required
-  pdf      text L 116.44 R 563.44 B 524.36 T 538.00 BL 527.40
+  pdf      text L 150.76 R 563.44 B 524.36 T 538.00 BL 527.40
 
 field 22d. formDate
   label    Date
   type     date
   presence required
-  pdf      text L 116.44 R 302.08 B 505.88 T 519.40 BL 508.92
+  pdf      text L  86.56 R 302.08 B 505.88 T 519.40 BL 508.92
 
 field 22t.
   label    Time

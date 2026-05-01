@@ -114,20 +114,20 @@ field 20. messageSummary
   presence required
   width    102
   help     "This is the title of the resource request.  It should be unique among all resource requests from the jurisdiction.  It is required."
-  pdf      text L 116.44 R 563.44 B 542.96 T 556.48 BL 546.00
+  pdf      text L  86.56 R 563.44 B 542.96 T 556.48 BL 546.00
 
 field 21.
   label    "22. Requesting Agency"
   presence required
   help     "This is the name of the municipality, hospital, county department, or other agency requesting resources.  It is required."
-  pdf      text L 116.44 R 563.44 B 524.36 T 538.00 BL 527.40
+  pdf      text L 150.76 R 563.44 B 524.36 T 538.00 BL 527.40
 
 field 22d. formDate
   label    "23. Date"
   type     date
   presence required
   help     "This is the date of the resource request.  It is required."
-  pdf      text L 116.44 R 302.08 B 505.88 T 519.40 BL 508.92
+  pdf      text L  86.56 R 302.08 B 505.88 T 519.40 BL 508.92
 
 field 22t.
   label    "24. Time"
