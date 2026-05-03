@@ -1,34 +1,6 @@
-2026-05-01:  Revised Resource Request form.  Changed the Jurisdiction field to
-    Requesting Agency, since this form can be used by hospitals, county
-    departments, and others, not just jurisdictions.  Removed the drop-down
-    suggestions from the field.
-
-2026-05-01:  Revised Hospital Status form.  Split the Overall Hospital Census
-    field into two fields.  Put the Patient Flow fields in a more compact
-    layout.  Added a text entry for the Other option in Clinical Trends.
-
-2026-04-26:  Remove default values from all To ICS Position and To Location
-    fields of all forms.  They have drop-downs with suggested values, but no
-    value is pre-filled.
-
-2026-04-26:  Add all hospital names to the options for the Jurisdiction field
-    on the Resource Request form.
-
-2026-04-23:  Changed the appearance and behavior of the drop-down selections on
-    all forms.
-
-2026-04-20:  Add version number to title of HTML forms, to match PDF forms.
-    Also added missing version number to title of AHFacStat form.
-
-2026-04-19:  Added new Allied Health Status Report (AHFacStat v20260418).
-    This form has the same purpose and usage as the old Allied Health Facility
-    Status form: reporting the status and capabilities of a non-hospital health
-    care facility to the PHDOC.  However, the form is completely redesigned to
-    current standards.  It no longer requires a radio routing slip.  PackItForms
-    can still receive messages containing the old form.
-  NOTE:  This new form will not be visible in the Outpost Forms menu until you
-    quit and restart Outpost.
-
-2026-04-19:  Corrected the field widths on the Hospital Status form.
-    The field widths while editing a Hospital Status message now match the
-    amount of space available on the printed form.
+2026-05-03: Updates based on feedback from G. Ryder 2026-05-02:
+  - Enlarged message date field on all forms.
+  - Renamed "Show PDF" button to "Blank PDF" to better reflect what it does.
+  - Fixed clickability of labels for HospStat fields 61 through 81.
+  - Removed extra whitespace from options for CPODSite field 35.
+  - Attempted fix for wrapping items in combo boxes.
