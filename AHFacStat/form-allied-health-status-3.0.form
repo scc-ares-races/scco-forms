@@ -4,7 +4,7 @@ version  3.0
 title    Allied Health Status Report
 indef    an allied health status report
 create   AHFacStat a
-pdfFile  Allied_Health_Status_Report_v20260418.pdf
+pdfFile  Allied_Health_Status_Report_v20260503.pdf
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"
@@ -24,14 +24,14 @@ field 1a. messageDate
   type     date
   presence required
   help     "This is the date the message was written, in MM/DD/YYYY format.  It is required."
-  pdf      text L  80.32 R 128.32 B 651.68 T 670.72 BL 657.36
+  pdf      text L  81.04 R 141.76 B 651.68 T 670.72 BL 657.36
 
 field 1b. messageTime
   label    "3. Message Time"
   type     time
   presence required
   help     "This is the time the message was written, in HH:MM format (24-hour clock).  It is required."
-  pdf      text L 173.44 R 209.20 B 651.68 T 670.72 BL 657.36
+  pdf      text L 190.00 R 236.32 B 651.68 T 670.72 BL 657.36
 
 field -
   label    "2-3. Message Date/Time"
@@ -49,9 +49,9 @@ field 5. handling
   choice   ROUTINE
   presence required
   help     "This is the message handling order, which specifies how fast it needs to be delivered.  Allowed values are \"ROUTINE\" (within 2 hours), \"PRIORITY\" (within 1 hour), and \"IMMEDIATE\".  This field is required."
-  pdf      if 5.=IMMEDIATE then circle X 285.36 Y 661.32 R 2.72
-  pdf      if 5.=PRIORITY then  circle X 381.90 Y 661.32 R 2.66
-  pdf      if 5.=ROUTINE then   circle X 462.78 Y 661.32 R 2.66
+  pdf      if 5.=IMMEDIATE then circle X 309.84 Y 661.32 R 2.72
+  pdf      if 5.=PRIORITY then  circle X 406.80 Y 661.32 R 2.66
+  pdf      if 5.=ROUTINE then   circle X 487.92 Y 661.32 R 2.66
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
