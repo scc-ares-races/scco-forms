@@ -4,7 +4,7 @@ version  1.0
 title    Shelter Form
 indef    a shelter form
 subject  Shelter
-pdfFile  Shelter_v20260307.pdf
+pdfFile  Shelter_v20260503.pdf
 deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
 
 field MsgNo originMessageID
@@ -22,13 +22,13 @@ field 1a. messageDate
   label    "Message Date"
   type     date
   presence required
-  pdf      text L  81.04 R 132.76 B 658.88 T 678.76 BL 665.04
+  pdf      text L  81.04 R 141.76 B 658.88 T 678.76 BL 665.04
 
 field 1b. messageTime
   label    "Message Time"
   type     time
   presence required
-  pdf      text L 181.12 R 236.32 B 658.88 T 678.76 BL 665.04
+  pdf      text L 190.00 R 236.32 B 658.88 T 678.76 BL 665.04
 
 field -
   label    "Message Date/Time"
