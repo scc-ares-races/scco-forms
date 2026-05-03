@@ -329,6 +329,7 @@ ul[role="listbox"] {
   cursor: pointer;
   max-height: 15rem;
   z-index: 1;
+  scrollbar-gutter: stable;
 }
 
 ul[role="listbox"] li[role="option"] {
