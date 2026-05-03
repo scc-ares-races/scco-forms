@@ -11,18 +11,18 @@
   <div id=form-header-roo>
     <div class=section-inline>Radio Operator Only:</div>
     <div class=pair>
-      <label for=MsgNo>1. Origin Msg #:</label>
+      <label for=MsgNo>Origin Msg #:</label>
       <input id=MsgNo name=MsgNo class=message-number required style="{{w-MsgNo}}">
     </div>
     <div class=pair>
-      <label for=DestMsgNo>2. Destination Msg #:</label>
+      <label for=DestMsgNo>Destination Msg #:</label>
       <input id=DestMsgNo name=DestMsgNo class=message-number disabled style="{{w-DestMsgNo}}">
     </div>
   </div>
   <div class=border-thick>
     <div class=layout-grid style="--columns: max-content max-content 1fr">
       <div class="border subgrid rowspan3" style="padding-inline: 0.25rem">
-        <label for=1a. class=rowspan2>1. Date:</label>
+        <label for=1a. class=rowspan2>Date:</label>
         <div><input id=1a. name=1a. class=date required style="{{w-1a.}}"></div>
       </div>
       <div class="border subgrid rowspan3" style="padding-inline: 0.25rem">
@@ -31,7 +31,7 @@
       </div>
       <div class=layout-pair>
         <div class=pair>
-          <div class=label>5. Handling <span class=annotation>(✓ one):</span></div>
+          <div class=label>Handling <span class=annotation>(✓ one):</span></div>
           <div class="layout-horizontal colgap required-group">
             <label>
               <input type=radio name=5. required value=IMMEDIATE>Immediate
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="border subgrid rowspan2" style="padding-inline: 0.25rem; row-gap: 0.25rem">
-        <div class=label>6. This Message Requests You To:</div>
+        <div class=label>This Message Requests You To:</div>
         <div class="layout-grid colgap"
           style="--columns: repeat(3, max-content); margin-left: 1.5rem; align-items: baseline; row-gap: 0.25rem">
           <div class=label style="justify-self:end;margin:0">TAKE ACTION <span class=annotation>(✓ one):</span></div>
@@ -114,21 +114,21 @@
     </div>
     <div class=layout-pair>
       <div class=pair>
-        <label for=10.>10. Subject:</label>
+        <label for=10.>Subject:</label>
         <input id=10. name=10. required style="{{w-10.}}">
       </div>
       <div class=pair>
-        <label for=1.>11. Reference:</label>
+        <label for=1.>Reference:</label>
         <input id=11. name=11. style="{{w-11.}}">
       </div>
       <div class=pair>
-        <label for=12.>12. Message:</label>
+        <label for=12.>Message:</label>
         <textarea id=12. name=12. required style="{{w-12.}}"></textarea>
       </div>
     </div>
   </div>
   <div class=layout-grid style="--columns: max-content 1fr 1fr; margin-top: 1rem; align-items: baseline">
-    <div class="section colspan3">14. Operator Use Only:</div>
+    <div class="section colspan3">Operator Use Only:</div>
     <div class=section-inline>Relay:</div>
     <div class="layout-pair">
       <div class=pair>

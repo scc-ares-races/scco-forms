@@ -1,3 +1,6 @@
+2026-05-03: Updates based on feedback from M. Adler 2026-05-03:
+  - ICS-213: Remove non-field numbers from web form.
+
 2026-05-03: Updates based on feedback from S. Constantinescu 2026-05-03:
   - ICS-213: Made the "Reply by" field visible and the "Message" field required.
   - CPODUpd: Fixed IMMEDIATE and ROUTINE, which had been swapped.
