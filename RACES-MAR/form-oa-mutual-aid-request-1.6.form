@@ -4,7 +4,7 @@ version  1.6
 title    RACES Mutual Aid Request Form
 indef    a RACES mutual aid request form
 subject  RACES-MAR
-pdfFile  XSC_RACES_MA_Req_v20260307.pdf
+pdfFile  XSC_RACES_MA_Req_v20260503.pdf
 
 field MsgNo originMessageID
   label    "Origin Message Number"
@@ -22,13 +22,13 @@ field 1a. messageDate
   label    "Message Date"
   type     date
   presence required
-  pdf      text L  81.56 R 136.60 B 689.84 T 704.56 BL 693.48
+  pdf      text L  81.04 R 141.76 B 689.84 T 704.56 BL 693.48
 
 field 1b. messageTime
   label    "Message Time"
   type     time
   presence required
-  pdf      text L 182.36 R 245.32 B 689.84 T 704.56 BL 693.48
+  pdf      text L 190.00 R 245.32 B 689.84 T 704.56 BL 693.48
 
 field -
   label    "Message Date/Time"
