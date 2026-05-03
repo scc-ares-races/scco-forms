@@ -4,7 +4,7 @@ version  1.1
 title    Resource Request Form
 indef    a resource request form
 create   ResReq rr
-pdfFile  Resource_Request_v20260501.pdf
+pdfFile  Resource_Request_v20260503.pdf
 deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
 
 field MsgNo originMessageID
@@ -25,14 +25,14 @@ field 1a. messageDate
   type     date
   presence required
   help     "This is the date the message was written, in MM/DD/YYYY format.  It is required."
-  pdf      text L  81.04 R 132.76 B 656.12 T 676.12 BL 662.40
+  pdf      text L  81.04 R 141.76 B 656.12 T 676.12 BL 662.40
 
 field 1b. messageTime
   label    "4. Message Time"
   type     time
   presence required
   help     "This is the time the message was written, in HH:MM format (24-hour clock).  It is required."
-  pdf      text L 181.12 R 236.32 B 656.12 T 676.12 BL 662.40
+  pdf      text L 190.00 R 236.32 B 656.12 T 676.12 BL 662.40
 
 field -
   label    "Message Date/Time"
