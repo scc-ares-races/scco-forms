@@ -23,13 +23,13 @@ field 1a. messageDate
   label    "Message Date"
   type     date
   presence required
-  pdf      text L  79.04 R 132.76 B 658.88 T 678.76 BL 665.04
+  pdf      text L  81.04 R 141.76 B 658.88 T 678.76 BL 665.04
 
 field 1b. messageTime
   label    "Message Time"
   type     time
   presence required
-  pdf      text L 181.12 R 236.32 B 658.88 T 678.76 BL 665.04
+  pdf      text L 190.00 R 236.32 B 658.88 T 678.76 BL 665.04
 
 field -
   label    "Message Date/Time"
