@@ -4,7 +4,7 @@ version  1.1
 title    CPOD Commodities Update Form
 indef    a CPOD commodities update form
 create   CPODUpd cu
-pdfFile  CPOD_Commodities_v20260307.pdf
+pdfFile  CPOD_Commodities_v20260503.pdf
 deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
 
 field MsgNo originMessageID
@@ -24,14 +24,14 @@ field 1a. messageDate
   type     date
   presence required
   help     "This is the date the message was written, in MM/DD/YYYY format.  It is required."
-  pdf      text L  79.04 R 132.76 B 658.88 T 678.76 BL 665.04
+  pdf      text L  81.04 R 141.76 B 658.88 T 678.76 BL 665.04
 
 field 1b. messageTime
   label    "4. Message Time"
   type     time
   presence required
   help     "This is the time the message was written, in HH:MM format (24-hour clock).  It is required."
-  pdf      text L 181.12 R 236.32 B 658.88 T 678.76 BL 665.04
+  pdf      text L 190.00 R 236.32 B 658.88 T 678.76 BL 665.04
 
 field -
   label    "3-4. Message Date/Time"
