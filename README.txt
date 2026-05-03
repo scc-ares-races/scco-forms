@@ -6,6 +6,7 @@
   - CPODUpd: Fixed IMMEDIATE and PRIORITY, which had been swapped.
   - RoadCl: Fixed PRIORITY and ROUTINE, which had been swapped.
   - All: more intelligent auto-format for date fields.
+  - All: disabled clipping on text fields so overflow shows.
 
 2026-05-03: Updates based on feedback from G. Ryder 2026-05-02:
   - Enlarged message date field on all forms.

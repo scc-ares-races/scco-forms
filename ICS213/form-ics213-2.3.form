@@ -5,7 +5,7 @@ title    ICS-213 General Message Form
 indef    an ICS-213 general message form
 create   ICS213 i
 pdfFile  ICS-213_SCC_Message_Form_v220119_fillable.pdf
-deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
+deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

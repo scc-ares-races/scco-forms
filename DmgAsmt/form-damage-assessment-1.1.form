@@ -5,7 +5,7 @@ title    Damage Assessment Form
 indef    a damage assessment form
 create   DmgAsmt d
 pdfFile  Damage_Assessment_v20260503.pdf
-deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
+deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"
