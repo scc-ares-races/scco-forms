@@ -4,7 +4,7 @@ version  3.0
 title    Hospital Bed Availability Report
 indef    a hospital bed availability report
 create   HAvBed hb
-pdfFile  XSC_HAvBed_Report_v20260223.pdf
+pdfFile  XSC_HAvBed_Report_v20260503.pdf
 deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR f CL t C 000099
 
 field MsgNo originMessageID
@@ -24,14 +24,14 @@ field 1a. messageDate
   type     date
   presence required
   help     "This is the date the message was written, in MM/DD/YYYY format.  It is required."
-  pdf      text L  80.32 R 128.32 B 657.20 T 676.48 BL 663.12
+  pdf      text L  81.04 R 141.76 B 657.20 T 676.48 BL 663.12
 
 field 1b. messageTime
   label    "4. Message Time"
   type     time
   presence required
   help     "This is the time the message was written, in HH:MM format (24-hour clock).  It is required."
-  pdf      text L 173.44 R 218.32 B 657.20 T 676.48 BL 663.12
+  pdf      text L 190.00 R 236.32 B 657.20 T 676.48 BL 663.12
 
 field -
   label    "Message Date/Time"
@@ -49,9 +49,9 @@ field 5. handling
   choice   ROUTINE
   presence required
   help     "This is the message handling order, which specifies how fast it needs to be delivered.  Allowed values are \"ROUTINE\" (within 2 hours), \"PRIORITY\" (within 1 hour), and \"IMMEDIATE\".  This field is required."
-  pdf      if 5.=IMMEDIATE then circle X 294.24 Y 667.08 R 2.72
-  pdf      if 5.=PRIORITY then circle X 390.78 Y 667.14 R 2.78
-  pdf      if 5.=ROUTINE then circle X 471.66 Y 667.08 R 2.78
+  pdf      if 5.=IMMEDIATE then circle X 309.84 Y 667.08 R 2.72
+  pdf      if 5.=PRIORITY then circle X 406.80 Y 667.14 R 2.78
+  pdf      if 5.=ROUTINE then circle X 487.92 Y 667.08 R 2.78
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
