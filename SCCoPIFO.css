@@ -246,7 +246,7 @@ label,
   font-weight: bold;
 }
 
-label:not([for]) {
+label.hanging {
   margin-left: 1.5rem;
   text-indent: -1.5rem;
 }
