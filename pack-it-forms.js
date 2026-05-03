@@ -25,10 +25,25 @@ var standardAttributes = {
       "(0[1-9]|1[012])/(0[1-9]|1[0-9]|2[0-9]|3[01])/[1-2][0-9][0-9][0-9]",
     placeholder: "mm/dd/yyyy",
     cleanupHandler: evt => {
-      let value = evt.target.value.replaceAll('-', '/')
-      if (/^\d\//.test(value)) value = '0' + value
-      if (/^\d\d\/\d\//.test(value)) value = value.substring(0, 3) + '0' + value.substring(3)
-      if (/^\d\d\/\d\d\/\d\d$/.test(value)) value = value.substring(0, 6) + '20' + value.substring(6)
+      let value = evt.target.value
+      // Four digits:
+      value = value.replace(/^([1-9])[-./]?([1-9])[-./]?(\d\d)$/, '0$1/0$2/20$3')
+      // Five digits with a slash in the first three:
+      value = value.replace(/^(0[1-9]|1[012])[-./]([1-9])[-./]?(\d\d)$/, '$1/0$2/20$3')
+      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./]?(\d\d)$/, '0$1/$2/20$3')
+      // Five digits without a slash in the first three:
+      value = value.replace(/^(0[1-9])([1-9])[-./]?(\d\d)$/, '$1/0$2/20$3')
+      value = value.replace(/^(1)(0[1-9]|[123]0|31)[-./]?(\d\d)$/, '0$1/$2/20$3')
+      value = value.replace(/^([2-9])(0[1-9]|[12]\d|3[01])[-./]?(\d\d)$/, '0$1/$2/20$3')
+      // Six or eight digits:
+      value = value.replace(/^(0[1-9]|1[012])[-./]?(0[1-9]|[12]\d|3[01])[-./]?(?:20)?(\d\d)$/, '$1/$2/20$3')
+      // Seven digits with a slash in the first three:
+      value = value.replace(/^(0[1-9]|1[012])[-./]([1-9])[-./]?20(\d\d)$/, '$1/0$2/20$3')
+      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./]?20(\d\d)$/, '0$1/$2/20$3')
+      // Seven digits without a slash in the first three:
+      value = value.replace(/^(0[1-9])([1-9])[-./]?20(\d\d)$/, '$1/0$2/20$3')
+      value = value.replace(/^(1)(0[1-9]|[123]0|31)[-./]?20(\d\d)$/, '0$1/$2/20$3')
+      value = value.replace(/^([2-9])(0[1-9]|[12]\d|3[01])[-./]?20(\d\d)$/, '0$1/$2/20$3')
       evt.target.value = value
     },
   },

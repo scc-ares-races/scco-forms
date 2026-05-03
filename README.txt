@@ -1,6 +1,7 @@
 2026-05-03: Updates based on feedback from S. Constantinescu 2026-05-03:
   - ICS-213: Made the "Reply by" field visible and the "Message" field required.
   - CPODUpd: Fixed IMMEDIATE and ROUTINE, which had been swapped.
+  - All: more intelligent auto-format for date fields.
 
 2026-05-03: Updates based on feedback from G. Ryder 2026-05-02:
   - Enlarged message date field on all forms.
