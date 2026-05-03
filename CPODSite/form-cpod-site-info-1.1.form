@@ -187,11 +187,11 @@ field 24.
   mchoice  "Not Activated" e. Not Activated
   presence required
   help     "This is the status of the CPOD.  It is required."
-  pdf      if 24.=Activated then circle X 263.64 Y 449.10 R 2.84
-  pdf      if 24.="Pending Demobilization" then circle X 407.64 Y 449.10 R 2.84
-  pdf      if 24.="Not Activated" then circle X 119.64 Y 449.10 R 2.84
-  pdf      if 24.="Pending Activation" then circle X 263.64 Y 433.56 R 2.72
-  pdf      if 24.=Demobilization then circle X 119.70 Y 433.56 R 2.90
+  pdf      if 24.=Activated then circle X 119.64 Y 449.10 R 2.84
+  pdf      if 24.="Pending Demobilization" then circle X 263.64 Y 449.10 R 2.84
+  pdf      if 24.="Not Activated" then circle X 407.64 Y 449.10 R 2.84
+  pdf      if 24.="Pending Activation" then circle X 119.70 Y 433.56 R 2.90
+  pdf      if 24.=Demobilization then circle X 263.64 Y 433.56 R 2.72
 
 field 25a.
   label    "34. Address"
