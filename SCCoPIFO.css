@@ -335,6 +335,7 @@ ul[role="listbox"] li[role="option"] {
   margin: 0;
   display: block;
   padding: 2px 0.25rem;
+  white-space: nowrap;
 }
 
 .combobox .group.focus button,
