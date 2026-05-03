@@ -50,8 +50,8 @@ field 5. handling
   presence required
   help     "This is the message handling order, which specifies how fast it needs to be delivered.  Allowed values are \"ROUTINE\" (within 2 hours), \"PRIORITY\" (within 1 hour), and \"IMMEDIATE\".  This field is required."
   pdf      if 5.=IMMEDIATE then circle X 309.84 Y 669.12 R 2.72
-  pdf      if 5.=PRIORITY then circle X 487.92 Y 669.12 R 2.72
-  pdf      if 5.=ROUTINE then circle X 406.80 Y 669.06 R 2.84
+  pdf      if 5.=PRIORITY then circle X 406.80 Y 669.06 R 2.84
+  pdf      if 5.=ROUTINE then circle X 487.92 Y 669.12 R 2.72
 
 field 7a. toICSPosition
   label    "6. To ICS Position"
