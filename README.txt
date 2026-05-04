@@ -1,3 +1,6 @@
+2026-05-03: Updates based on feedback from J. Walker 2026-05-03:
+  - CPODSite: Fix nonpersistent time closed field.
+
 2026-05-03: Updates based on feedback from G. Ryder 2026-05-03:
   - CPODSite: Fix mismatched options on field 33.
 
