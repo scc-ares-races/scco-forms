@@ -26,23 +26,27 @@ var standardAttributes = {
     placeholder: "mm/dd/yyyy",
     cleanupHandler: evt => {
       let value = evt.target.value
-      // Four digits:
-      value = value.replace(/^([1-9])[-./]?([1-9])[-./]?(\d\d)$/, '0$1/0$2/20$3')
-      // Five digits with a slash in the first three:
-      value = value.replace(/^(0[1-9]|1[012])[-./]([1-9])[-./]?(\d\d)$/, '$1/0$2/20$3')
-      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./]?(\d\d)$/, '0$1/$2/20$3')
-      // Five digits without a slash in the first three:
-      value = value.replace(/^(0[1-9])([1-9])[-./]?(\d\d)$/, '$1/0$2/20$3')
-      value = value.replace(/^(1)(0[1-9]|[123]0|31)[-./]?(\d\d)$/, '0$1/$2/20$3')
-      value = value.replace(/^([2-9])(0[1-9]|[12]\d|3[01])[-./]?(\d\d)$/, '0$1/$2/20$3')
-      // Six or eight digits:
-      value = value.replace(/^(0[1-9]|1[012])[-./]?(0[1-9]|[12]\d|3[01])[-./]?(?:20)?(\d\d)$/, '$1/$2/20$3')
-      // Seven digits with a slash in the first three:
+      // M/D/YY:
+      value = value.replace(/^([1-9])[-./]([1-9])[-./](\d\d)$/, '0$1/0$2/20$3')
+      // MM/D/YY:
+      value = value.replace(/^(0[1-9]|1[012])[-./]([1-9])[-./](\d\d)$/, '$1/0$2/20$3')
+      // M/DD/YY:
+      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./](\d\d)$/, '0$1/$2/20$3')
+      // MDDYY:
+      value = value.replace(/^(1)(0[1-9]|[123]0|31)(\d\d)$/, '0$1/$2/20$3')
+      value = value.replace(/^([2-9])(0[1-9]|[12]\d|3[01])(\d\d)$/, '0$1/$2/20$3')
+      // MMDDYY, MMDDYYYY:
+      value = value.replace(/^(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])(?:20)?(\d\d)$/, '$1/$2/20$3')
+      // MM/DD/YY:
+      value = value.replace(/^(0[1-9]|1[012])[-./](0[1-9]|[12]\d|3[01])[-./](\d\d)$/, '$1/$2/20$3')
+      // M/D/YYYY:
+      value = value.replace(/^([1-9])[-./]([1-9])[-./]20(\d\d)$/, '0$1/0$2/20$3')
+      // MM/D/YYYY:
       value = value.replace(/^(0[1-9]|1[012])[-./]([1-9])[-./]?20(\d\d)$/, '$1/0$2/20$3')
-      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./]?20(\d\d)$/, '0$1/$2/20$3')
-      // Seven digits without a slash in the first three:
-      value = value.replace(/^(0[1-9])([1-9])[-./]?20(\d\d)$/, '$1/0$2/20$3')
-      value = value.replace(/^(1)(0[1-9]|[123]0|31)[-./]?20(\d\d)$/, '0$1/$2/20$3')
+      // M/DD/YYYY:
+      value = value.replace(/^([1-9])[-./](0[1-9]|[12]\d|3[01])[-./]20(\d\d)$/, '0$1/$2/20$3')
+      // MDDYYYY:
+      value = value.replace(/^(1)(0[1-9]|[123]0|31)20(\d\d)$/, '0$1/$2/20$3')
       value = value.replace(/^([2-9])(0[1-9]|[12]\d|3[01])[-./]?20(\d\d)$/, '0$1/$2/20$3')
       evt.target.value = value
     },
