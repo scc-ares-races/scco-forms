@@ -3,7 +3,7 @@
 <script type=text/javascript src={{assets}}/pack-it-forms.js></script>
 <title>Allied Health Status Report</title>
 <packet-form>
-  <form-roo form-title="Allied Health Status Report" paper-version="PDF: 20260503">
+  <form-roo form-title="Allied Health Status Report" paper-version="PDF: 20260506">
     <form-dthtf
       to-ics-positions="Health Care Liaison; EMS Unit; Public Health Unit; Medical Health Branch; Operations Section"
       to-locations="PHDOC; County EOC"></form-dthtf>
@@ -72,25 +72,21 @@
         <label for=41b.>b. Patients Currently on Site:</label>
         <input id=41b. name=41b. class=cardinalNumber style="{{w-41b.}}">
       </div>
-    </div>
-    <div class="layout-grid" style="--columns: max-content 1fr max-content 1fr">
-      <div class="pair">
-        <label for=42.>42. Patients Pending Evacuation:</label>
+      <div class="pair colspan3">
+        <label class=colspan2 for=42.>42. Patients Pending Evacuation:</label>
         <input id=42. name=42. class=cardinalNumber style="{{w-42.}}">
       </div>
       <div class="pair">
         <label for=43.>43. Patients Transferred Out:</label>
         <input id=43. name=43. class=cardinalNumber style="{{w-43.}}">
       </div>
-    </div>
-    <div class="layout-pair">
-      <div class="pair">
-        <label for=44.>44. Incident-Related Injuries (If Applicable):</label>
-        <input id=44. name=44. style="{{w-44.}}">
+      <div class="pair colspan5">
+        <label class=colspan2 for=44.>44. Incident-Related Injuries (If Applicable):</label>
+        <input id=44. name=44. class=colspan3 style="{{w-44.}}">
       </div>
-      <div class="pair">
-        <label for=45.>45. Other Patient Care Impacts</label>
-        <input id=45. name=45. style="{{w-45.}}">
+      <div class="pair colspan5">
+        <label class=colspan2 for=45.>45. Other Patient Care Impacts</label>
+        <input id=45. name=45. class=colspan3 style="{{w-45.}}">
       </div>
     </div>
     <div class=section style="display:flex;justify-content:space-between;align-items:center">

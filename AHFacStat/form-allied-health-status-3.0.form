@@ -4,7 +4,7 @@ version  3.0
 title    Allied Health Status Report
 indef    an allied health status report
 create   AHFacStat a
-pdfFile  Allied_Health_Status_Report_v20260503.pdf
+pdfFile  Allied_Health_Status_Report_v20260506.pdf
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"
@@ -166,25 +166,25 @@ field 41a.
   label    "41a. Census: Total Residents"
   type     cardinalNumber
   help     "This provides the total number of residents of the facility."
-  pdf      text L 227.68 R 321.76 B 307.28 T 324.88 BL 312.24
+  pdf      text L 242.80 R 321.76 B 307.28 T 324.88 BL 312.24
 
 field 41b.
   label    "41b. Census: Patients on Site"
   type     cardinalNumber
   help     "This provides the number of patients currently on site."
-  pdf      text L 463.48 R 572.56 B 307.28 T 324.88 BL 312.24
+  pdf      text L 465.04 R 572.56 B 307.28 T 324.88 BL 312.24
 
 field 42.
   label    "42. Patients Pending Evacuation"
   type     cardinalNumber
   help     "This provides the number of patients waiting to be evacuated."
-  pdf      text L 193.72 R 294.88 B 285.20 T 302.80 BL 290.64
+  pdf      text L 242.80 R 321.76 B 285.20 T 302.80 BL 290.64
 
 field 43.
   label    "43. Patients Transferred Out"
   type     cardinalNumber
   help     "This provides the number of patients who have been transferred out of the facility."
-  pdf      text L 438.16 R 572.56 B 285.20 T 302.80 BL 290.64
+  pdf      text L 465.04 R 572.56 B 285.20 T 302.80 BL 290.64
 
 field 44.
   label    "44. Incident Related Injuries"
@@ -194,7 +194,7 @@ field 44.
 field 45.
   label    "45. Other Patient Care Impacts"
   help     "This describes other impacts to patient care."
-  pdf      text L 187.96 R 572.56 B 241.04 T 258.64 BL 246.48
+  pdf      text L 242.80 R 572.56 B 241.04 T 258.64 BL 246.48
 
 field 50a.
   label    "50a. Skilled Nursing: Staffed M"

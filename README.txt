@@ -1,3 +1,6 @@
+2026-05-06: Updates based on feedback from T. Howard 2026-04-27:
+  - AHFacStat: Align fields 41-45.
+
 2026-05-03: Updates based on feedback from J. Walker 2026-05-03:
   - CPODSite: Fix nonpersistent time closed field.
 
