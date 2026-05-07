@@ -748,7 +748,7 @@ async function on_submit(evt) {
   if (resp.status == 204) {
     const action = resp.headers.get("X-Packet-Action")
     if (action.startsWith("redirect:")) location.href = action.substring(9)
-    else {
+    else if (window.opener) {
       window.opener.childAction(resp.headers.get("X-Packet-Action"))
       window.close()
     }
