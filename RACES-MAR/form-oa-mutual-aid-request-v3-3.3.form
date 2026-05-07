@@ -4,8 +4,8 @@ version  3.3
 title    RACES Mutual Aid Request Form
 indef    a RACES mutual aid request form
 create   RACES-MAR rm
-pdfFile  XSC_RACES_MA_Req_v20260503.pdf
-deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF C 000099
+pdfFile  XSC_RACES_MA_Req_v20260506.pdf
+deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR true CL false C 000099
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"
@@ -843,14 +843,14 @@ field 20a.
   type     date
   presence required
   help     "This is the date when the operational period will start for the requested resources.  It is required."
-  pdf      text L 200.08 R 231.76 B 308.84 T 324.40 BL 316.80
+  pdf      text L 178.36 R 240.88 B 303.92 T 324.40 BL 315.84
 
 field 20b.
   label    "29b. Operational Period Start Time"
   type     time
   presence required
   help     "This is the time when the operational period will start for the requested resources.  It is required."
-  pdf      text L 298.84 R 344.32 B 308.84 T 324.40 BL 316.80
+  pdf      text L 292.00 R 344.32 B 303.92 T 324.40 BL 315.84
 
 field -
   label    "29ab. Operational Period Start"
@@ -865,14 +865,14 @@ field 20c.
   type     date
   presence required
   help     "This is the date by when the operational period will end for the requested resources.  It is required."
-  pdf      text L 398.32 R 451.36 B 308.84 T 324.40 BL 316.80
+  pdf      text L 376.96 R 451.36 B 303.92 T 324.40 BL 315.84
 
 field 20d.
   label    "29d. Operational Period End Time"
   type     time
   presence required
   help     "This is the time by when the operational period will end for the requested resources.  It is required."
-  pdf      text L 507.40 R 575.44 B 308.84 T 324.40 BL 316.80
+  pdf      text L 502.72 R 575.44 B 303.92 T 324.40 BL 315.84
 
 field -
   label    "29cd. Operational Period End"
@@ -888,7 +888,7 @@ field 21.
   presence required
   width    94
   help     "This is the location to which the requested people should report.  Include street address, parking info, and entry instructions.  This field is required."
-  pdf      text L 143.08 R 575.44 B 285.80 T 304.36 BL 295.92
+  pdf      text L 143.08 R 575.44 B 280.88 T 299.44 BL 291.00
   pdf      if RECEIVED then text P 2 L 139.12 R 573.52 B 422.36 T 437.68 BL 429.24
 
 field 22.
@@ -897,7 +897,7 @@ field 22.
   presence required
   width    94
   help     "This is the name, position, and contact info (phone, frequency, ...) for the official that the requested people should contact upon arrival. This is typically a net control on a radio frequency or a specific person or function at a telephone number.  This field is required."
-  pdf      text L 143.08 R 575.44 B 263.36 T 281.32 BL 272.88
+  pdf      text L 143.08 R 575.44 B 258.44 T 276.40 BL 267.96
   pdf      if RECEIVED then text P 2 L 139.12 R 573.52 B 402.56 T 417.88 BL 409.44
 
 field 23.
@@ -906,7 +906,7 @@ field 23.
   presence required
   width    94
   help     "This field describes how to travel to the reporting location.  Identify preferred routes, road closures, and hazards to be avoided during travel.  If an overnight stay is included, specify how lodging will be provided.  This field is required."
-  pdf      text L 143.08 R 575.44 B 243.56 T 258.88 BL 250.44
+  pdf      text L 143.08 R 575.44 B 238.64 T 253.96 BL 245.52
   pdf      if RECEIVED then text P 2 L 139.12 R 573.52 B 382.76 T 398.08 BL 389.64
 
 field 24a.
@@ -914,61 +914,61 @@ field 24a.
   presence required
   width    45
   help     "This is the name of the official requesting mutual aid (typically the Radio Officer of the requesting agency).  It is required."
-  pdf      text L 183.88 R 443.32 B 224.36 T 239.08 BL 231.48
+  pdf      text L 183.88 R 443.32 B 219.44 T 234.16 BL 226.56
 
 field 24b.
   label    "33b. Requested By Title"
   presence required
   width    31
   help     "This is the title of the official requesting mutual aid.  It is required."
-  pdf      text L 484.48 R 575.44 B 224.36 T 239.08 BL 231.48
+  pdf      text L 484.48 R 575.44 B 219.44 T 234.16 BL 226.56
 
 field 24c.
   label    "33c. Requested By Contact"
   width    94
   help     "This is the contact information (email, phone, frequency) of the official requesting mutual aid.  It is required."
-  pdf      text L 300.88 R 575.44 B 199.16 T 219.88 BL 212.28
+  pdf      text L 300.88 R 575.44 B 194.24 T 214.96 BL 207.36
 
 field 25a.
   label    "34a. Approved By Name"
   presence required
   width    45
   help     "This is the name of the agency official approving the mutual aid request.  It is required."
-  pdf      text L 183.88 R 443.32 B 179.84 T 194.68 BL 187.08
+  pdf      text L 183.88 R 443.32 B 174.92 T 189.76 BL 182.16
 
 field 25b.
   label    "34b. Approved By Title"
   presence required
   width    31
   help     "This is the title of the agency official approving the mutual aid request.  It is required."
-  pdf      text L 484.48 R 575.44 B 179.84 T 194.68 BL 187.08
+  pdf      text L 484.48 R 575.44 B 174.92 T 189.76 BL 182.16
 
 field 25c.
   label    "34c. Approved By Contact"
   presence required
   width    94
   help     "This is the contact information (email, phone, frequency) for the agency official approving the mutual aid request.  It is required."
-  pdf      text L 255.04 R 575.44 B 158.24 T 175.36 BL 167.76
+  pdf      text L 255.04 R 575.44 B 153.32 T 170.44 BL 162.84
 
 field 25s.
   label    "34d. With Signature"
   type     checkbox
   help     "This indicates that the original resource request form has been signed."
-  pdf      if 25s. then cross L 367.80 R 375.48 B 140.16 T 148.68
+  pdf      if 25s. then cross L 367.80 R 375.48 B 135.24 T 143.76
 
 field 26a.
   label    "34e. Approved By Date"
   type     date
   presence required
   help     "This is the date when the mutual aid request was approved by the official listed above, in MM/DD/YYYY format.  It is required."
-  pdf      text L 421.84 R 479.08 B 135.68 T 153.76 BL 146.16
+  pdf      text L 421.84 R 479.08 B 130.76 T 148.84 BL 141.24
 
 field 26b.
   label    "34f. Approved By Time"
   type     time
   presence required
   help     "This is the time when the mutual aid request was approved by the official listed above, in HH:MM format (24-hour clock).  It is required."
-  pdf      text L 516.16 R 575.44 B 135.68 T 153.76 BL 146.16
+  pdf      text L 516.16 R 575.44 B 130.76 T 148.84 BL 141.24
 
 field -
   label    "34ef. Approved Date/Time"
@@ -981,23 +981,23 @@ field OpRelayRcvd
   label    "Operator: Relay Received"
   width    36
   help     "This is the name of the station from which this message was directly received.  It is filled in for messages that go through a relay station."
-  pdf      text L 108.76 R 320.32 B 100.40 T 114.76 BL 103.92
+  pdf      text L 108.76 R 320.32 B  95.48 T 109.84 BL  99.00
 
 field OpRelaySent
   label    "Operator: Relay Sent"
   width    36
   help     "This is the name of the station to which this message was directly sent.  It is filled in for messages that go through a relay station."
-  pdf      text L 354.64 R 575.44 B 100.40 T 114.76 BL 103.92
+  pdf      text L 354.64 R 575.44 B  95.48 T 109.84 BL  99.00
 
 field OpName operatorName
   label    "Operator: Name"
   presence required
-  pdf      text L  74.92 R 248.32 B  81.44 T  95.92 BL  84.96
+  pdf      text L  74.92 R 248.32 B  76.52 T  91.00 BL  80.04
 
 field OpCall operatorCall
   label    "Operator: Call Sign"
   presence required
-  pdf      text L 300.64 R 365.32 B  81.44 T  95.92 BL  84.96
+  pdf      text L 300.64 R 365.32 B  76.52 T  91.00 BL  80.04
 
 field -
   label    Operator
@@ -1007,12 +1007,12 @@ field -
 field OpDate operatorDate
   label    "Operator: Date"
   type     date
-  pdf      text L 400.84 R 479.08 B  81.44 T  95.92 BL  84.96
+  pdf      text L 400.84 R 479.08 B  76.52 T  91.00 BL  80.04
 
 field OpTime operatorTime
   label    "Operator: Time"
   type     time
-  pdf      text L 543.04 R 575.44 B  81.44 T  95.92 BL  84.96
+  pdf      text L 543.04 R 575.44 B  76.52 T  91.00 BL  80.04
 
 field -
   label    "Operator: Date/Time"

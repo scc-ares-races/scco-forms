@@ -4,7 +4,8 @@ version  2.3
 title    RACES Mutual Aid Request Form
 indef    a RACES mutual aid request form
 subject  RACES-MAR
-pdfFile  XSC_RACES_MA_Req_v20260503.pdf
+pdfFile  XSC_RACES_MA_Req_v20260506.pdf
+deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF WR true CL false C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"
@@ -44,8 +45,8 @@ field 5. handling
   choice   ROUTINE
   presence required
   pdf      if 5.=IMMEDIATE then circle X 318.90 Y 697.56 R 2.90
-  pdf      if 5.=PRIORITY then  circle X 415.80 Y 697.50 R 2.84
-  pdf      if 5.=ROUTINE then   circle X 496.92 Y 697.50 R 2.84
+  pdf      if 5.=PRIORITY then circle X 415.80 Y 697.50 R 2.84
+  pdf      if 5.=ROUTINE then circle X 496.92 Y 697.50 R 2.84
 
 field 7a. toICSPosition
   label    "To ICS Position"
@@ -465,12 +466,12 @@ field 19b.
 field 20a.
   label    "Needed Until Dates"
   presence required
-  pdf      text L 396.32 R 451.36 B 308.84 T 324.40 BL 316.80
+  pdf      text L 376.96 R 451.36 B 303.92 T 324.40 BL 315.84
 
 field 20b.
   label    "Needed Until Times"
   presence required
-  pdf      text L 505.40 R 575.44 B 308.84 T 324.40 BL 316.80
+  pdf      text L 502.72 R 575.44 B 303.92 T 324.40 BL 315.84
 
 field -
   label    "Needed Until"
@@ -483,63 +484,63 @@ field 21.
   label    "Reporting Location"
   type     multiline
   presence required
-  pdf      text L 141.08 R 575.44 B 285.80 T 304.36 BL 295.92
+  pdf      text L 141.08 R 575.44 B 280.88 T 299.44 BL 291.00
   pdf      if RECEIVED then text P 2 L 137.12 R 573.52 B 422.36 T 437.68 BL 429.24
 
 field 22.
   label    "Contact on Arrival"
   type     multiline
   presence required
-  pdf      text L 141.08 R 575.44 B 263.36 T 281.32 BL 272.88
+  pdf      text L 141.08 R 575.44 B 258.44 T 276.40 BL 267.96
   pdf      if RECEIVED then text P 2 L 137.12 R 573.52 B 402.56 T 417.88 BL 409.44
 
 field 23.
   label    "Travel Info"
   type     multiline
   presence required
-  pdf      text L 141.08 R 575.44 B 243.56 T 258.88 BL 250.44
+  pdf      text L 141.08 R 575.44 B 238.64 T 253.96 BL 245.52
   pdf      if RECEIVED then text P 2 L 137.12 R 573.52 B 382.76 T 398.08 BL 389.64
 
 field 24a.
   label    "Requested By Name"
   presence required
-  pdf      text L 181.88 R 443.32 B 224.36 T 239.08 BL 231.48
+  pdf      text L 181.88 R 443.32 B 219.44 T 234.16 BL 226.56
 
 field 24b.
   label    "Requested By Title"
   presence required
-  pdf      text L 482.48 R 575.44 B 224.36 T 239.08 BL 231.48
+  pdf      text L 482.48 R 575.44 B 219.44 T 234.16 BL 226.56
 
 field 24c.
   label    "Requested By Contact"
-  pdf      text L 298.88 R 575.44 B 199.16 T 219.88 BL 212.28
+  pdf      text L 298.88 R 575.44 B 194.24 T 214.96 BL 207.36
 
 field 25a.
   label    "Approved By Name"
   presence required
-  pdf      text L 181.88 R 443.32 B 179.84 T 194.68 BL 187.08
+  pdf      text L 181.88 R 443.32 B 174.92 T 189.76 BL 182.16
 
 field 25b.
   label    "Approved By Title"
   presence required
-  pdf      text L 482.48 R 575.44 B 179.84 T 194.68 BL 187.08
+  pdf      text L 482.48 R 575.44 B 174.92 T 189.76 BL 182.16
 
 field 25c.
   label    "Approved By Contact"
   presence required
-  pdf      text L 253.04 R 575.44 B 158.24 T 175.36 BL 167.76
+  pdf      text L 253.04 R 575.44 B 153.32 T 170.44 BL 162.84
 
 field 26a.
   label    "Approved By Date"
   type     date
   presence required
-  pdf      text L 419.84 R 479.08 B 135.68 T 153.76 BL 146.16
+  pdf      text L 419.84 R 479.08 B 130.76 T 148.84 BL 141.24
 
 field 26b.
   label    "Approved By Time"
   type     time
   presence required
-  pdf      text L 514.16 R 575.44 B 135.68 T 153.76 BL 146.16
+  pdf      text L 514.16 R 575.44 B 130.76 T 148.84 BL 141.24
 
 field -
   label    "Approved Date/Time"
@@ -549,21 +550,21 @@ field -
 
 field OpRelayRcvd
   label    "Operator: Relay Received"
-  pdf      text L 106.76 R 320.32 B 100.40 T 114.76 BL 103.92
+  pdf      text L 106.76 R 320.32 B  95.48 T 109.84 BL  99.00
 
 field OpRelaySent
   label    "Operator: Relay Sent"
-  pdf      text L 352.64 R 575.44 B 100.40 T 114.76 BL 103.92
+  pdf      text L 352.64 R 575.44 B  95.48 T 109.84 BL  99.00
 
 field OpName operatorName
   label    "Operator: Name"
   presence required
-  pdf      text L  72.92 R 248.32 B  81.44 T  95.92 BL 84.96
+  pdf      text L  72.92 R 248.32 B  76.52 T  91.00 BL  80.04
 
 field OpCall operatorCall
   label    "Operator: Call Sign"
   presence required
-  pdf      text L 298.64 R 365.32 B  81.44 T  95.92 BL 84.96
+  pdf      text L 298.64 R 365.32 B  76.52 T  91.00 BL  80.04
 
 field -
   label    Operator
@@ -573,12 +574,12 @@ field -
 field OpDate operatorDate
   label    "Operator: Date"
   type     date
-  pdf      text L 398.84 R 479.08 B  81.44 T  95.92 BL 84.96
+  pdf      text L 398.84 R 479.08 B  76.52 T  91.00 BL  80.04
 
 field OpTime operatorTime
   label    "Operator: Time"
   type     time
-  pdf      text L 541.04 R 575.44 B  81.44 T  95.92 BL 84.96
+  pdf      text L 541.04 R 575.44 B  76.52 T  91.00 BL  80.04
 
 field -
   label    "Operator: Date/Time"

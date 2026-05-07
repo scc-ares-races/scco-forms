@@ -1,3 +1,6 @@
+2026-05-06: Updates based on feedback from G. Ryder 2026-05-02:
+  - RACES-MAR: Make operational period date and time fields fit.
+
 2026-05-06: Updates based on feedback from T. Howard 2026-04-27:
   - AHFacStat: Align fields 41-45.
 
