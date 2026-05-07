@@ -3,6 +3,7 @@
 
 2026-05-06: Updates based on feedback from T. Howard 2026-05-05:
   - ICS-213: From Telephone now being transmitted
+  - CPODUpd: Add field 33 Additional Info (place to put "drill traffic")
 
 2026-05-06: Updates based on feedback from D. Clendenin 2026-05-04:
   - HAvBed: Field 45 now being transmitted
