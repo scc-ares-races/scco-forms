@@ -1,3 +1,7 @@
+2026-05-06: Updates based on feedback from D. Clendenin 2026-05-04:
+  - HAvBed: Field 45 now being transmitted
+  - HospStat: Fields 82 and 83 not visible unless 81 is Yes
+
 2026-05-06: Updates based on feedback from S. Constantinescu 2026-05-03:
   - ICS-213: Remove boilerplate instructions so footer won't overlap
   - All: submit button enabled after combo-box selection
