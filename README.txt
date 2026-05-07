@@ -1,5 +1,6 @@
 2026-05-06: Updates based on feedback from S. Constantinescu 2026-05-03:
   - ICS-213: Remove boilerplate instructions so footer won't overlap
+  - All: submit button enabled after combo-box selection
 
 2026-05-06: Updates based on feedback from G. Ryder 2026-05-02:
   - RACES-MAR: Make operational period date and time fields fit.

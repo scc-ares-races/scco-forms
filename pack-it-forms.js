@@ -177,6 +177,7 @@ class ComboboxAutocomplete {
     this.filter = value
     this.comboboxNode.value = this.filter
     this.comboboxNode.setSelectionRange(this.filter.length, this.filter.length)
+    this.comboboxNode.dispatchEvent(new InputEvent('input', { bubbles: true }))
     this.filterOptions()
   }
   setOption(option, flag) {
@@ -191,6 +192,7 @@ class ComboboxAutocomplete {
       } else {
         this.comboboxNode.setSelectionRange(this.filter.length, this.option.textContent.length)
       }
+      this.comboboxNode.dispatchEvent(new InputEvent('input', { bubbles: true }))
     }
   }
   setVisualFocusCombobox() {
@@ -359,6 +361,7 @@ class ComboboxAutocomplete {
         } else {
           this.setValue('')
           this.comboboxNode.value = ''
+          this.comboboxNode.dispatchEvent(new InputEvent('input', { bubbles: true }))
         }
         this.option = null
         flag = true
@@ -497,6 +500,7 @@ class ComboboxAutocomplete {
   }
   onOptionClick(event) {
     this.comboboxNode.value = event.target.textContent
+    this.comboboxNode.dispatchEvent(new InputEvent('input', { bubbles: true }))
     this.close(true)
   }
   onOptionPointerover() {
