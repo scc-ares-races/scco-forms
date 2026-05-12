@@ -126,10 +126,10 @@ field 12.1.
   label    "21. Diversion"
   type     restricted
   mchoice  Unknown a. Unknown
-  mchoice  Open b. Open
-  mchoice  "Diverting Ambulances" c. Diverting Ambulances
-  mchoice  "Internal Disaster" d. Internal Disaster
-  mchoice  "Specialty Bypass" e. Specialty Bypass
+  mchoice  "Internal Disaster" b. Internal Disaster
+  mchoice  Open c. Open
+  mchoice  "Specialty Bypass" d. Specialty Bypass
+  mchoice  "Diverting Ambulances" e. Diverting Ambulances
   help     "This indicates the diversion status of the hospital."
   pdf      if 12.1.=Unknown then                circle X 190.80 Y 526.44 R 2.84
   pdf      if 12.1.=Open then                   circle X 307.86 Y 526.50 R 2.54
@@ -146,9 +146,9 @@ field 12.2.
   label    "22. Decon"
   type     restricted
   mchoice  Unknown a. Unknown
-  mchoice  "Not Available" b. Not Available
-  mchoice  Active c. Active
-  mchoice  Available d. Available
+  mchoice  Available b. Available
+  mchoice  "Not Available" c. Not Available
+  mchoice  Active d. Active
   help     "This indicates the decontamination status of the hospital."
   pdf      if 12.2.=Unknown then         circle X 190.86 Y 478.02 R 2.66
   pdf      if 12.2.="Not Available" then circle X 307.86 Y 478.02 R 2.66
@@ -196,9 +196,9 @@ field 12.5.
   label    "25. Power"
   type     restricted
   mchoice  Unknown a. Unknown
-  mchoice  Normal b. Normal
-  mchoice  Generator c. Generator
-  mchoice  None d. None
+  mchoice  None b. None
+  mchoice  Normal c. Normal
+  mchoice  Generator d. Generator
   help     "This indicates the power supply for the hospital."
   pdf      if 12.5.=Unknown then   circle X 190.86 Y 355.14 R 2.66
   pdf      if 12.5.=Normal then    circle X 307.86 Y 355.14 R 2.54
@@ -220,13 +220,13 @@ field 12.6.
   label    "26. Building"
   type     restricted
   mchoice  Unknown a. Unknown
-  mchoice  "Restricted Use" b. Restricted Use
-  mchoice  "Unsafe to Occupy" c. Unsafe to Occupy
-  mchoice  "Not Inspected" d. Not Inspected
+  mchoice  "Not Inspected" b. Not Inspected
+  mchoice  Compromised c. Compromised
+  mchoice  "Restricted Use" d. Restricted Use
   mchoice  "Safe to Occupy" e. Safe to Occupy
-  mchoice  Normal f. Normal
-  mchoice  Compromised g. Compromised
-  mchoice  Evacuating h. Evacuating
+  mchoice  Evacuating f. Evacuating
+  mchoice  "Unsafe to Occupy" g. Unsafe to Occupy
+  mchoice  Normal h. Normal
   mchoice  Closed i. Closed
   help     "This indicates the structural safety of the hospital building."
   pdf      if 12.6.=Unknown then            circle X 190.86 Y 292.74 R 2.66
@@ -248,10 +248,10 @@ field 12.7.
   label    "27. Security"
   type     restricted
   mchoice  Unknown a. Unknown
-  mchoice  Normal b. Normal
-  mchoice  Elevated c. Elevated
-  mchoice  "Restricted Access" d. Restricted Access
-  mchoice  Lockdown e. Lockdown
+  mchoice  "Restricted Access" b. Restricted Access
+  mchoice  Normal c. Normal
+  mchoice  Lockdown d. Lockdown
+  mchoice  Elevated e. Elevated
   help     "This indicates the security level of the hospital."
   pdf      if 12.7.=Unknown then             circle X 190.86 Y 228.60 R 2.78
   pdf      if 12.7.=Normal then              circle X 307.86 Y 228.66 R 2.66
