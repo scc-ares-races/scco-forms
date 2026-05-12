@@ -1,3 +1,6 @@
+2026-05-12: Updates based on feedback from B. Warwick 2026-05-07:
+  - All: conditional fields now unhide properly after Reset Form
+
 2026-05-06: Updates based on feedback from B. Warwick 2026-05-06:
   - RACES-MAR: With Signature now being transmitted
 

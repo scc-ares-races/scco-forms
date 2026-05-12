@@ -553,6 +553,9 @@ class Conditional extends EventTarget {
       this.dispatchEvent(new CustomEvent("change", { detail: is }))
     }
   }
+  reset() {
+    this.was = this.test()
+  }
 }
 
 // SHARED FUNCTIONS (idempotent, called in startup and event handlers)
@@ -767,6 +770,7 @@ function reset_hidden_until() {
   document.querySelectorAll("[hidden-until]").forEach((elm) => {
     const cond = Conditional.getOrMake(elm, "hidden-until")
     if (cond.test() || anyChildHasValue(elm)) return
+    cond.reset()
     elm.setAttribute("hidden", "")
     elm.querySelectorAll("[required]").forEach((control) => {
       control.setAttribute(
