@@ -2,19 +2,23 @@
 <link rel=stylesheet href={{assets}}/SCCoPIFO.css>
 <script type=text/javascript src={{assets}}/SCCoPIFO.js></script>
 <script>
+  function setOptPrefixes(evt) {
+    const idpfx = evt.target.id.replace('b.', '')
+    const typfx = evt.target.value.substring(0, 1);
+    ['c', 'd'].forEach(col => {
+      document.querySelectorAll(`[id="${idpfx}${col}."] > option`).forEach(opt => {
+        switch (opt.value) {
+          case '1': case '2': case '3':
+            opt.textContent = typfx + opt.value
+        }
+      })
+    })
+  }
   window.addEventListener('load', () => {
     for (let i = 1; i <= 5; i++) {
-      document.getElementById(`18.${i}b.`).addEventListener('change', evt => {
-        const pfx = evt.target.value.substring(0, 1);
-        ['c', 'd'].forEach(col => {
-          document.querySelectorAll(`[id="18.${i}${col}."] > option`).forEach(opt => {
-            switch (opt.value) {
-              case '1': case '2': case '3':
-                opt.textContent = pfx + opt.value
-            }
-          })
-        })
-      })
+      const elm = document.getElementById(`18.${i}b.`)
+      elm.addEventListener('change', setOptPrefixes)
+      setOptPrefixes({target: elm})
     }
   })
 </script>

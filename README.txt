@@ -1,5 +1,6 @@
 2026-05-12: Updates based on feedback from S. Constantinescu 2026-05-09:
   - HospStat: Fix mismatched options on fields 21, 22, 25, 26, 27.
+  - RACES-MAR: Corrected rendering of resource type options.
 
 2026-05-12: Updates based on feedback from B. Warwick 2026-05-07:
   - All: conditional fields now unhide properly after Reset Form

@@ -218,8 +218,8 @@ field 18.1c.
   pdf      if 18.1b.="Shadow Communicator" then if 18.1c.=1 then text S S1 L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
   pdf      if 18.1b.="Shadow Communicator" then if 18.1c.=2 then text S S2 L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
   pdf      if 18.1b.="Shadow Communicator" then if 18.1c.=3 then text S S3 L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
-  pdf      if 18.1c.=4 then text L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
-  pdf      if 18.1c.=5 then text L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
+  pdf      if 18.1c.=4 then text S "Type IV" L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
+  pdf      if 18.1c.=5 then text S "Type V" L 457.48 R 510.76 B 446.60 T 461.32 BL 453.72
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1c.=1 then text S F1 P 2 L 422.80 R 492.76 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1c.=2 then text S F2 P 2 L 422.80 R 492.76 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1c.=3 then text S F3 P 2 L 422.80 R 492.76 B 351.44 T 363.16
@@ -232,8 +232,8 @@ field 18.1c.
   pdf      if RECEIVED then if 18.1b.="Shadow Communicator" then if 18.1c.=1 then text S S1 P 2 L 422.80 R 492.76 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Shadow Communicator" then if 18.1c.=2 then text S S2 P 2 L 422.80 R 492.76 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Shadow Communicator" then if 18.1c.=3 then text S S3 P 2 L 422.80 R 492.76 B 351.44 T 363.16
-  pdf      if RECEIVED then if 18.1c.=4 then text P 2 L 422.80 R 492.76 B 351.44 T 363.16
-  pdf      if RECEIVED then if 18.1c.=5 then text P 2 L 422.80 R 492.76 B 351.44 T 363.16
+  pdf      if RECEIVED then if 18.1c.=4 then text S "Type IV" P 2 L 422.80 R 492.76 B 351.44 T 363.16
+  pdf      if RECEIVED then if 18.1c.=5 then text S "Type V" P 2 L 422.80 R 492.76 B 351.44 T 363.16
 
 field 18.1d.
   label    "23e. Resource 1 Minimum Type"
@@ -266,8 +266,8 @@ field 18.1d.
   pdf      if 18.1b.="Shadow Communicator" then if 18.1d.=1 then text S S1 L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
   pdf      if 18.1b.="Shadow Communicator" then if 18.1d.=2 then text S S2 L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
   pdf      if 18.1b.="Shadow Communicator" then if 18.1d.=3 then text S S3 L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
-  pdf      if 18.1d.=4 then text L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
-  pdf      if 18.1d.=5 then text L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
+  pdf      if 18.1d.=4 then text S "Type IV" L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
+  pdf      if 18.1d.=5 then text S "Type V" L 524.68 R 575.44 B 446.60 T 461.32 BL 453.72
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1d.=1 then text S F1 P 2 L 499.24 R 573.52 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1d.=2 then text S F2 P 2 L 499.24 R 573.52 B 351.44 T 363.16
   pdf      if RECEIVED then if 18.1b.="Field Communicator" then if 18.1d.=3 then text S F3 P 2 L 499.24 R 573.52 B 351.44 T 363.16
@@ -351,8 +351,8 @@ field 18.2c.
   pdf      if 18.2b.="Shadow Communicator" then if 18.2c.=1 then text S S1 L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
   pdf      if 18.2b.="Shadow Communicator" then if 18.2c.=2 then text S S2 L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
   pdf      if 18.2b.="Shadow Communicator" then if 18.2c.=3 then text S S3 L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
-  pdf      if 18.2c.=4 then text L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
-  pdf      if 18.2c.=5 then text L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
+  pdf      if 18.2c.=4 then text S "Type IV" L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
+  pdf      if 18.2c.=5 then text S "Type V" L 457.48 R 510.76 B 427.40 T 442.12 BL 434.52
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2c.=1 then text S F1 P 2 L 422.80 R 492.76 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2c.=2 then text S F2 P 2 L 422.80 R 492.76 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2c.=3 then text S F3 P 2 L 422.80 R 492.76 B 335.24 T 346.96
@@ -365,8 +365,8 @@ field 18.2c.
   pdf      if RECEIVED then if 18.2b.="Shadow Communicator" then if 18.2c.=1 then text S S1 P 2 L 422.80 R 492.76 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Shadow Communicator" then if 18.2c.=2 then text S S2 P 2 L 422.80 R 492.76 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Shadow Communicator" then if 18.2c.=3 then text S S3 P 2 L 422.80 R 492.76 B 335.24 T 346.96
-  pdf      if RECEIVED then if 18.2c.=4 then text P 2 L 422.80 R 492.76 B 335.24 T 346.96
-  pdf      if RECEIVED then if 18.2c.=5 then text P 2 L 422.80 R 492.76 B 335.24 T 346.96
+  pdf      if RECEIVED then if 18.2c.=4 then text S "Type IV" P 2 L 422.80 R 492.76 B 335.24 T 346.96
+  pdf      if RECEIVED then if 18.2c.=5 then text S "Type V" P 2 L 422.80 R 492.76 B 335.24 T 346.96
 
 field 18.2d.
   label    "24e. Resource 2 Minimum Type"
@@ -399,8 +399,8 @@ field 18.2d.
   pdf      if 18.2b.="Shadow Communicator" then if 18.2d.=1 then text S S1 L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
   pdf      if 18.2b.="Shadow Communicator" then if 18.2d.=2 then text S S2 L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
   pdf      if 18.2b.="Shadow Communicator" then if 18.2d.=3 then text S S3 L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
-  pdf      if 18.2d.=4 then text L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
-  pdf      if 18.2d.=5 then text L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
+  pdf      if 18.2d.=4 then text S "Type IV" L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
+  pdf      if 18.2d.=5 then text S "Type V" L 524.68 R 575.44 B 427.40 T 442.12 BL 434.52
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2d.=1 then text S F1 P 2 L 499.24 R 573.52 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2d.=2 then text S F2 P 2 L 499.24 R 573.52 B 335.24 T 346.96
   pdf      if RECEIVED then if 18.2b.="Field Communicator" then if 18.2d.=3 then text S F3 P 2 L 499.24 R 573.52 B 335.24 T 346.96
@@ -484,8 +484,8 @@ field 18.3c.
   pdf      if 18.3b.="Shadow Communicator" then if 18.3c.=1 then text S S1 L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
   pdf      if 18.3b.="Shadow Communicator" then if 18.3c.=2 then text S S2 L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
   pdf      if 18.3b.="Shadow Communicator" then if 18.3c.=3 then text S S3 L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
-  pdf      if 18.3c.=4 then text L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
-  pdf      if 18.3c.=5 then text L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
+  pdf      if 18.3c.=4 then text S "Type IV" L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
+  pdf      if 18.3c.=5 then text S "Type V" L 457.48 R 510.76 B 408.20 T 422.92 BL 415.32
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3c.=1 then text S F1 P 2 L 422.80 R 492.76 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3c.=2 then text S F2 P 2 L 422.80 R 492.76 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3c.=3 then text S F3 P 2 L 422.80 R 492.76 B 319.04 T 330.76
@@ -498,8 +498,8 @@ field 18.3c.
   pdf      if RECEIVED then if 18.3b.="Shadow Communicator" then if 18.3c.=1 then text S S1 P 2 L 422.80 R 492.76 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Shadow Communicator" then if 18.3c.=2 then text S S2 P 2 L 422.80 R 492.76 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Shadow Communicator" then if 18.3c.=3 then text S S3 P 2 L 422.80 R 492.76 B 319.04 T 330.76
-  pdf      if RECEIVED then if 18.3c.=4 then text P 2 L 422.80 R 492.76 B 319.04 T 330.76
-  pdf      if RECEIVED then if 18.3c.=5 then text P 2 L 422.80 R 492.76 B 319.04 T 330.76
+  pdf      if RECEIVED then if 18.3c.=4 then text S "Type IV" P 2 L 422.80 R 492.76 B 319.04 T 330.76
+  pdf      if RECEIVED then if 18.3c.=5 then text S "Type V" P 2 L 422.80 R 492.76 B 319.04 T 330.76
 
 field 18.3d.
   label    "25e. Resource 3 Minimum Type"
@@ -532,8 +532,8 @@ field 18.3d.
   pdf      if 18.3b.="Shadow Communicator" then if 18.3d.=1 then text S S1 L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
   pdf      if 18.3b.="Shadow Communicator" then if 18.3d.=2 then text S S2 L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
   pdf      if 18.3b.="Shadow Communicator" then if 18.3d.=3 then text S S3 L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
-  pdf      if 18.3d.=4 then text L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
-  pdf      if 18.3d.=5 then text L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
+  pdf      if 18.3d.=4 then text S "Type IV" L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
+  pdf      if 18.3d.=5 then text S "Type V" L 524.68 R 575.44 B 408.20 T 422.92 BL 415.32
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3d.=1 then text S F1 P 2 L 499.24 R 573.52 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3d.=2 then text S F2 P 2 L 499.24 R 573.52 B 319.04 T 330.76
   pdf      if RECEIVED then if 18.3b.="Field Communicator" then if 18.3d.=3 then text S F3 P 2 L 499.24 R 573.52 B 319.04 T 330.76
@@ -617,8 +617,8 @@ field 18.4c.
   pdf      if 18.4b.="Shadow Communicator" then if 18.4c.=1 then text S S1 L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
   pdf      if 18.4b.="Shadow Communicator" then if 18.4c.=2 then text S S2 L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
   pdf      if 18.4b.="Shadow Communicator" then if 18.4c.=3 then text S S3 L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
-  pdf      if 18.4c.=4 then text L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
-  pdf      if 18.4c.=5 then text L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
+  pdf      if 18.4c.=4 then text S "Type IV" L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
+  pdf      if 18.4c.=5 then text S "Type V" L 457.48 R 510.76 B 389.00 T 403.72 BL 396.12
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4c.=1 then text S F1 P 2 L 422.80 R 492.76 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4c.=2 then text S F2 P 2 L 422.80 R 492.76 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4c.=3 then text S F3 P 2 L 422.80 R 492.76 B 302.84 T 314.56
@@ -631,8 +631,8 @@ field 18.4c.
   pdf      if RECEIVED then if 18.4b.="Shadow Communicator" then if 18.4c.=1 then text S S1 P 2 L 422.80 R 492.76 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Shadow Communicator" then if 18.4c.=2 then text S S2 P 2 L 422.80 R 492.76 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Shadow Communicator" then if 18.4c.=3 then text S S3 P 2 L 422.80 R 492.76 B 302.84 T 314.56
-  pdf      if RECEIVED then if 18.4c.=4 then text P 2 L 422.80 R 492.76 B 302.84 T 314.56
-  pdf      if RECEIVED then if 18.4c.=5 then text P 2 L 422.80 R 492.76 B 302.84 T 314.56
+  pdf      if RECEIVED then if 18.4c.=4 then text S "Type IV" P 2 L 422.80 R 492.76 B 302.84 T 314.56
+  pdf      if RECEIVED then if 18.4c.=5 then text S "Type V" P 2 L 422.80 R 492.76 B 302.84 T 314.56
 
 field 18.4d.
   label    "26e. Resource 4 Minimum Type"
@@ -665,8 +665,8 @@ field 18.4d.
   pdf      if 18.4b.="Shadow Communicator" then if 18.4d.=1 then text S S1 L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
   pdf      if 18.4b.="Shadow Communicator" then if 18.4d.=2 then text S S2 L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
   pdf      if 18.4b.="Shadow Communicator" then if 18.4d.=3 then text S S3 L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
-  pdf      if 18.4d.=4 then text L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
-  pdf      if 18.4d.=5 then text L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
+  pdf      if 18.4d.=4 then text S "Type IV" L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
+  pdf      if 18.4d.=5 then text S "Type V" L 524.68 R 575.44 B 389.00 T 403.72 BL 396.12
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4d.=1 then text S F1 P 2 L 499.24 R 573.52 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4d.=2 then text S F2 P 2 L 499.24 R 573.52 B 302.84 T 314.56
   pdf      if RECEIVED then if 18.4b.="Field Communicator" then if 18.4d.=3 then text S F3 P 2 L 499.24 R 573.52 B 302.84 T 314.56
@@ -750,8 +750,8 @@ field 18.5c.
   pdf      if 18.5b.="Shadow Communicator" then if 18.5c.=1 then text S S1 L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
   pdf      if 18.5b.="Shadow Communicator" then if 18.5c.=2 then text S S2 L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
   pdf      if 18.5b.="Shadow Communicator" then if 18.5c.=3 then text S S3 L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
-  pdf      if 18.5c.=4 then text L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
-  pdf      if 18.5c.=5 then text L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
+  pdf      if 18.5c.=4 then text S "Type IV" L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
+  pdf      if 18.5c.=5 then text S "Type V" L 457.48 R 510.76 B 369.80 T 384.52 BL 376.92
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5c.=1 then text S F1 P 2 L 422.80 R 492.76 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5c.=2 then text S F2 P 2 L 422.80 R 492.76 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5c.=3 then text S F3 P 2 L 422.80 R 492.76 B 287.60 T 298.36
@@ -764,8 +764,8 @@ field 18.5c.
   pdf      if RECEIVED then if 18.5b.="Shadow Communicator" then if 18.5c.=1 then text S S1 P 2 L 422.80 R 492.76 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Shadow Communicator" then if 18.5c.=2 then text S S2 P 2 L 422.80 R 492.76 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Shadow Communicator" then if 18.5c.=3 then text S S3 P 2 L 422.80 R 492.76 B 287.60 T 298.36
-  pdf      if RECEIVED then if 18.5c.=4 then text P 2 L 422.80 R 492.76 B 287.60 T 298.36
-  pdf      if RECEIVED then if 18.5c.=5 then text P 2 L 422.80 R 492.76 B 287.60 T 298.36
+  pdf      if RECEIVED then if 18.5c.=4 then text S "Type IV" P 2 L 422.80 R 492.76 B 287.60 T 298.36
+  pdf      if RECEIVED then if 18.5c.=5 then text S "Type V" P 2 L 422.80 R 492.76 B 287.60 T 298.36
 
 field 18.5d.
   label    "27e. Resource 5 Minimum Type"
@@ -798,8 +798,8 @@ field 18.5d.
   pdf      if 18.5b.="Shadow Communicator" then if 18.5d.=1 then text S S1 L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
   pdf      if 18.5b.="Shadow Communicator" then if 18.5d.=2 then text S S2 L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
   pdf      if 18.5b.="Shadow Communicator" then if 18.5d.=3 then text S S3 L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
-  pdf      if 18.5d.=4 then text L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
-  pdf      if 18.5d.=5 then text L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
+  pdf      if 18.5d.=4 then text S "Type IV" L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
+  pdf      if 18.5d.=5 then text S "Type V" L 524.08 R 575.44 B 369.80 T 384.52 BL 376.92
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5d.=1 then text S F1 P 2 L 499.24 R 573.52 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5d.=2 then text S F2 P 2 L 499.24 R 573.52 B 287.60 T 298.36
   pdf      if RECEIVED then if 18.5b.="Field Communicator" then if 18.5d.=3 then text S F3 P 2 L 499.24 R 573.52 B 287.60 T 298.36
