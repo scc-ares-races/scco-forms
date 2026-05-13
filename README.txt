@@ -1,3 +1,6 @@
+2026-05-13: Updates based on feedback from M. Adler 2026-05-12:
+  - HAvBed:  Comments field marked to receive default body text.
+
 2026-05-12: Updates based on feedback from S. Constantinescu 2026-05-09:
   - HospStat: Fix mismatched options on fields 21, 22, 25, 26, 27.
   - RACES-MAR: Corrected rendering of resource type options.

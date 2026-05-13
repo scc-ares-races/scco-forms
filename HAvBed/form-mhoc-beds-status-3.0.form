@@ -242,7 +242,7 @@ field 50.
   help     "This is the number of available ventilator-equipped beds.  It is required."
   pdf      text L 191.76 R 252.32 B 207.92 T 224.08 BL 212.16 A rF
 
-field 51.
+field 51. defaultBody
   label    "45. Comment"
   type     multiline
   help     "This field contains comments about the report."
