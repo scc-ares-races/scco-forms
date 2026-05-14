@@ -3,64 +3,31 @@
 <script type=text/javascript src={{assets}}/SCCoPIFO.js></script>
 <title>ICS-213 Message Form</title>
 <packet-form>
-  <div id=form-header>
-    <div id=form-title>ICS-213 Message Form</div>
-    <div>PIF: {{form-version}}</div>
-    <div>PDF: 20220119</div>
-  </div>
-  <div id=form-header-roo>
-    <div class=section-inline>Radio Operator Only:</div>
-    <div class=pair>
-      <label for=MsgNo>Origin Msg #:</label>
-      <input id=MsgNo name=MsgNo class=message-number required style="{{w-MsgNo}}">
-    </div>
-    <div class=pair>
-      <label for=DestMsgNo>Destination Msg #:</label>
-      <input id=DestMsgNo name=DestMsgNo class=message-number disabled style="{{w-DestMsgNo}}">
-    </div>
-  </div>
-  <div class=border-thick>
-    <div class=layout-grid style="--columns: max-content max-content 1fr">
-      <div class="border subgrid rowspan3" style="padding-inline: 0.25rem">
-        <label for=1a. class=rowspan2>Date:</label>
-        <div><input id=1a. name=1a. class=date required style="{{w-1a.}}"></div>
+  <form-roo form-title="ICS-213 Message Form" paper-version="PDF: 20260512">
+    <div class=layout-grid style="--columns: max-content 1fr max-content 1fr max-content max-content">
+      <div class=pair>
+        <label for=1a.>3. Date:</label>
+        <input id=1a. name=1a. class=date required style={{w-1a.}}>
       </div>
-      <div class="border subgrid rowspan3" style="padding-inline: 0.25rem">
-        <label for=1b. class=rowspan2>Time <span class=annotation>(24hr):</span></label>
-        <div style="text-align: center"><input id=1b. name=1b. class=time required style="{{w-1b.}}"></div>
+      <div class=pair>
+        <label for=1b.>4. Time:</label>
+        <input id=1b. name=1b. class=time required style={{w-1b.}}>
       </div>
-      <div class=layout-pair>
-        <div class=pair>
-          <div class=label>Handling <span class=annotation>(✓ one):</span></div>
-          <div class="layout-horizontal colgap required-group">
-            <label>
-              <input type=radio name=5. required value=IMMEDIATE>Immediate
-              <span>(ASAP)</span>
-            </label>
-            <label>
-              <input type=radio name=5. required value=PRIORITY>Priority
-              <span>(&lt;1 hr)</span>
-            </label>
-            <label>
-              <input type=radio name=5. required value=ROUTINE>Routine
-              <span>(&lt;2 hrs)</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="border subgrid rowspan2" style="padding-inline: 0.25rem; row-gap: 0.25rem">
-        <div class=label>This Message Requests You To:</div>
-        <div class="layout-grid colgap"
-          style="--columns: repeat(3, max-content); margin-left: 1.5rem; align-items: baseline; row-gap: 0.25rem">
-          <div class=label style="justify-self:end;margin:0">TAKE ACTION <span class=annotation>(✓ one):</span></div>
-          <label><input type=radio name=6a. value=Yes>Yes</label>
-          <label><input type=radio name=6a. value=No>No</label>
-          <div class=label style="justify-self:end;margin:0">REPLY <span class=annotation>(✓ one):</span></div>
-          <div>
-            <label for=6b.><input type=radio id=6b. name=6b. value=Yes>Yes,</label>
-            <label for=6d.>by <input id=6d. name=6d. allowed-if="6b.=Yes" style="border-bottom:1px solid #888; {{w-6d.}}"></label>
-          </div>
-          <label><input type=radio name=6b. value=No>No</label>
+      <div class=pair>
+        <div class=label>5. Handling:</div>
+        <div class="layout-horizontal colgap required-group">
+          <label>
+            <input type=radio name=5. required value=IMMEDIATE>Immediate
+            <span>(ASAP)</span>
+          </label>
+          <label>
+            <input type=radio name=5. required value=PRIORITY>Priority
+            <span>(&lt;1 hr)</span>
+          </label>
+          <label>
+            <input type=radio name=5. required value=ROUTINE>Routine
+            <span>(&lt;2 hrs)</span>
+          </label>
         </div>
       </div>
     </div>
@@ -74,20 +41,20 @@
         </div>
       </if:show-addrs>
       <div class=pair style="grid-area:2/2/3/4">
-        <label for=7.>ICS Position:</label>
-        <input id=7. name=7. required>
+        <label for=7.>6. ICS Position:</label>
+        <input id=7. name=7. required style={{w-7.}}>
       </div>
       <div class=pair style="grid-area:3/2/4/4">
-        <label for=9a.>Location:</label>
-        <input id=9a. name=9a. required>
+        <label for=9a.>7. Location:</label>
+        <input id=9a. name=9a. required style={{w-9a.}}>
       </div>
       <div class=pair style="grid-area:4/2/5/4">
-        <label for=ToName>Name:</label>
-        <input id=ToName name=ToName>
+        <label for=ToName>8. Name:</label>
+        <input id=ToName name=ToName style={{w-ToName}}>
       </div>
       <div class=pair style="grid-area:5/2/6/4">
-        <label for=ToTel>Telephone #:</label>
-        <input id=ToTel name=ToTel>
+        <label for=ToTel>9. Contact Info:</label>
+        <input id=ToTel name=ToTel style={{w-ToTel}}>
       </div>
       <if:show-addrs>
         <div class=pair style="grid-area:1/5/2/7">
@@ -96,20 +63,39 @@
         </div>
       </if:show-addrs>
       <div class=pair style="grid-area:2/5/3/7">
-        <label for=8.>ICS Position:</label>
-        <input id=8. name=8. required>
+        <label for=8.>10. ICS Position:</label>
+        <input id=8. name=8. required style={{w-8.}}>
       </div>
       <div class=pair style="grid-area:3/5/4/7">
-        <label for=9b.>Location:</label>
-        <input id=9b. name=9b. required>
+        <label for=9b.>11. Location:</label>
+        <input id=9b. name=9b. required style={{w-9b.}}>
       </div>
       <div class=pair style="grid-area:4/5/5/7">
-        <label for=FmName>Name:</label>
-        <input id=FmName name=FmName>
+        <label for=FmName>12. Name:</label>
+        <input id=FmName name=FmName style={{w-FmName}}>
       </div>
       <div class=pair style="grid-area:5/5/6/7">
-        <label for=FmTel>Telephone #:</label>
-        <input id=FmTel name=FmTel>
+        <label for=FmTel>13. Contact Info:</label>
+        <input id=FmTel name=FmTel style={{w-FmTel}}>
+      </div>
+    </div>
+    <div class=layout-grid style="--columns: repeat(4, max-content) 1fr">
+      <div class="subsec rowspan2" style="display:flex;align-items:center">
+        This message requests you to:
+      </div>
+      <div class="pair colspan4">
+        <div class=label>Take Action:</div>
+        <div class=colspan3>
+          <label><input type=radio name=6a. value=Yes>Yes</label>
+          <label><input type=radio name=6a. value=No>No</label>
+        </div>
+        <div class=label>Reply:</div>
+        <div>
+          <label><input type=radio name=6b. value=Yes>Yes</label>
+          <label><input type=radio name=6b. value=No>No</label>
+        </div>
+        <label for=6d.>Reply By:</label>
+        <input id=6d. name=6d. allowed-if="6b.=Yes" style="{{w-6d.}}">
       </div>
     </div>
     <div class=layout-pair>
@@ -126,63 +112,5 @@
         <textarea id=12. name=12. required style="{{w-12.}}"></textarea>
       </div>
     </div>
-  </div>
-  <div class=layout-grid style="--columns: max-content 1fr 1fr; margin-top: 1rem; align-items: baseline">
-    <div class="section colspan3">Operator Use Only:</div>
-    <div class=section-inline>Relay:</div>
-    <div class="layout-pair">
-      <div class=pair>
-        <label for=OpRelayRcvd>Rcvd:</label>
-        <input id=OpRelayRcvd name=OpRelayRcvd style="{{w-OpRelayRcvd}}">
-      </div>
-    </div>
-    <div class="layout-pair">
-      <div class=pair>
-        <label for=OpRelaySent>Sent:</label>
-        <input id=OpRelaySent name=OpRelaySent style="{{w-OpRelaySent}}">
-      </div>
-    </div>
-    <div class="subgrid colspan2 rowspan4">
-      <div class=section-inline>How:</div>
-      <div class=border style="padding: 0.25rem">
-        <label for=Rec-Sent-R><input type=radio id=Rec-Sent-R name=Rec-Sent value=receiver>Received or </label>
-        <label for=Rec-Sent-S><input type=radio id=Rec-Sent-S name=Rec-Sent value=sender>Sent</label>
-        <span class=annotation>(✓ one):</span>
-      </div>
-      <div class="colspan2 rowspan3 colgap border" style="display: grid; grid: subgrid / max-content max-content 1fr">
-        <label><input type=radio name=Method value=Telephone>Telephone</label>
-        <label class=colspan2><input type=radio name=Method value="Dispatch Center">Dispatch Center</label>
-        <label><input type=radio name=Method value="EOC Radio">EOC Radio</label>
-        <label><input type=radio name=Method value=Fax>Fax</label>
-        <label><input type=radio name=Method value=Courier>Courier</label>
-        <label><input type=radio name=Method value="Amateur Radio">Amateur Radio</label>
-        <div class=colspan2>
-          <label for=Method-O><input type=radio id=Method-O name=Method value=Other>Other</label>
-          &nbsp;
-          <input name=Other placeholder="(describe)" allowed-if="Method=Other" style="width:8.41rem">
-        </div>
-      </div>
-    </div>
-    <div class=rowspan4 style="display: grid; grid: subgrid / max-content 1fr">
-      <div class=pair>
-        <label for=OpCall>Operator Call Sign:</label>
-        <input id=OpCall name=OpCall class=call-sign required style="{{w-OpCall}}">
-      </div>
-      <div class=pair>
-        <label for=OpName>Operator Name:</label>
-        <input id=OpName name=OpName required style="{{w-OpName}}">
-      </div>
-      <div class="border colspan2" style="padding: 0.25rem">&nbsp;</div>
-      <div class="layout-grid colspan2" style="--columns: max-content 1fr max-content 1fr">
-        <div class=pair>
-          <label for=OpDate>Date:</label>
-          <input id=OpDate name=OpDate class=date style="{{w-OpDate}}">
-        </div>
-        <div class=pair>
-          <label for=OpTime>Time <span class=annotation>(24hr)</span>:</label>
-          <input id=OpTime name=OpTime class=time style="{{w-OpTime}}">
-        </div>
-      </div>
-    </div>
-  </div>
+  </form-roo>
 </packet-form>

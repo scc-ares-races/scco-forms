@@ -1,3 +1,6 @@
+2026-05-13: By popular request:
+  - Rewritten ICS-213 form.
+
 2026-05-13: Updates based on feedback from M. Adler 2026-05-12:
   - HAvBed:  Comments field marked to receive default body text.
 
