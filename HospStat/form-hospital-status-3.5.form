@@ -5,6 +5,7 @@ title    Hospital Status Form
 indef    a hospital status form
 create   HospStat hs
 pdfFile  XSC_Hospital_Status_v20260501.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"

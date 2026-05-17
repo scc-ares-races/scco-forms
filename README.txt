@@ -1,3 +1,5 @@
+2026-05-17: Switched to more legible PDF font for message text.
+
 2026-05-13: By popular request:
   - Rewritten ICS-213 form.
 

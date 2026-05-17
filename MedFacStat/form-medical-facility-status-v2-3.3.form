@@ -5,6 +5,7 @@ title    Medical Facility Status Form
 indef    a medical facility status form
 subject  MedFacStat
 pdfFile  XSC_MedFacStat_v190531b_Fillable.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

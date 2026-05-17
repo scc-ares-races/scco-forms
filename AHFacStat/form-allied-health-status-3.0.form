@@ -5,6 +5,7 @@ title    Allied Health Status Report
 indef    an allied health status report
 create   AHFacStat a
 pdfFile  Allied_Health_Status_Report_v20260506.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "1. Origin Message Number"

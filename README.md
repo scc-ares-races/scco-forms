@@ -325,7 +325,7 @@ are specified depends on the annotation type.  The possible attributes are:
 * `FS` (text): Font size.  Defaults to 12.
 * `FT` (text): Font name.  Allowed values are `Times-Roman` (the default),
   `Times-Bold`, `Times-Italic`, `Courier`, `Courier-Bold`, `Courier-Oblique`,
-  `Helvetica`, `Helvetica-Bold`, and `Helvetica-Oblique`.
+  `Helvetica`, `Helvetica-Bold`, `Helvetica-Oblique`, and `Go`.
 * `L`, `R`, `W` (text, cross, box): Horizontal placement of the rectangle, with
   its left coordinate, right coordinate, and/or width.  At least two of the
   three must be specified, and if all three are specified, L+W=R must hold.

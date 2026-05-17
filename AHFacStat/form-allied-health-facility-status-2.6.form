@@ -5,6 +5,7 @@ title    Allied Health Facility Status Form
 indef    an allied health facility status form
 subject  AHFacStat
 pdfFile  Allied_Health_Facility_Status_DEOC-9_v20180200_with_XSC_RACES_Routing_Slip_v20190527.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

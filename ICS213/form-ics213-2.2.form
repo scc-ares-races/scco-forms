@@ -5,7 +5,7 @@ title    ICS-213 General Message Form
 indef    an ICS-213 general message form
 subject  ICS213
 pdfFile  XSC_ICS-213_v20260512.pdf
-deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF C 000099
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

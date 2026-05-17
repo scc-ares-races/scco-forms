@@ -5,6 +5,7 @@ title    Medical Resource Request Form
 indef    a medical resource request form
 subject  MedResReq
 pdfFile  Medical_Resource_Request_Form_9A.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

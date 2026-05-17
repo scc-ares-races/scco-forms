@@ -5,6 +5,7 @@ title    OA Shelter Status Form
 indef    an OA shelter status form
 subject  SheltStat
 pdfFile  XSC_SheltStat_v190619b_Fillable.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

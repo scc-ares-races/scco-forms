@@ -5,7 +5,7 @@ title    CPOD Site Information Form
 indef    a CPOD site information form
 subject  CPODSite
 pdfFile  CPOD_Site_Information_v20260503.pdf
-deftext  FT Times-Roman FS 12.0 MS 8.0 LH 1.15 A lF C 000099
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

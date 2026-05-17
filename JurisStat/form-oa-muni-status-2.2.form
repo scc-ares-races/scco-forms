@@ -5,6 +5,7 @@ title    OA Jurisdiction Status Form
 indef    an OA jurisdiction status form
 subject  JurisStat
 pdfFile  XSC_MuniStat_v190528b_Fillable.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

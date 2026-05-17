@@ -5,6 +5,7 @@ title    Hospital Bed Availability Report
 indef    a hospital bed availability report
 subject  HAvBed
 pdfFile  XSC_HAvBed_Report_v190606a_Fillable.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field MsgNo originMessageID
   label    "Origin Message Number"

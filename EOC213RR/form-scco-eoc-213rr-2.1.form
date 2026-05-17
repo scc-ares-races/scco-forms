@@ -5,6 +5,7 @@ title    EOC-213RR Resource Request Form
 indef    an EOC-213RR resource request form
 subject  EOC213RR
 pdfFile  XSC_EOC-213RR_v20170803_with_XSC_RACES_Routing_Slip_v20190527.pdf
+deftext  FT GoRegular FS 12.0 MS 8.0 LH 1.15 A lF C 000099
 
 field -
   type     static
