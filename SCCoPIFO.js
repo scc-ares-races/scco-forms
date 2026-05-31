@@ -789,16 +789,6 @@ function reset_form() {
 
 // SETUP FUNCTIONS (run only once)
 
-// Ping the server periodically, to keep it alive while this page is open.
-function start_pings() {
-  setInterval(function ping() {
-    var img = new Image()
-    // To discourage caching, use a new query string for each ping.
-    img.src = "/ping?i=" + Math.random()
-    img = undefined
-  }, 30000) // every 30 seconds
-}
-
 // Set up the combo boxes, if any.
 function setup_comboboxes() {
   var comboboxes = document.querySelectorAll('.combobox-list')
@@ -914,7 +904,6 @@ function set_initial_focus() {
 
 window.addEventListener("load", function () {
   the_form = document.getElementById("the-form")
-  start_pings()
   setup_comboboxes()
   setup_hidden_until()
   setup_required_if()
