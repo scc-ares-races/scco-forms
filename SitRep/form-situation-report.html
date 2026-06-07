@@ -4,25 +4,26 @@
 <title>Situation Report</title>
 <packet-form>
   <form-roo form-title="Situation Report" paper-version="PDF: 20260503">
-    <form-dthtf to-ics-positions="Situational Analysis Unit; Common Operating Picture Spec.; Planning" to-locations="County EOC"></form-dthtf>
+    <form-dthtf to-ics-positions="Situational Analysis Unit; Common Operating Picture Spec.; Planning"
+      to-locations="County EOC"></form-dthtf>
     <div class=section>Overview</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
-      <div class=pair>
-        <label for=20d.>21. Prepared Date:</label>
-        <input id=20d. name=20d. class=date required style="{{w-20d.}}">
-      </div>
-      <div class=pair>
-        <label for=20t.>22. Prepared Time:</label>
-        <input id=20t. name=20t. class=time required style="{{w-20t.}}">
-      </div>
-      <div class=pair>
-        <label for=21.>23. Jurisdiction:</label>
+      <label class=pair>
+        <div class=label>21. Prepared Date:</div>
+        <input name=20d. class=date required style="{{w-20d.}}">
+      </label>
+      <label class=pair>
+        <div class=label>22. Prepared Time:</div>
+        <input name=20t. class=time required style="{{w-20t.}}">
+      </label>
+      <label class=pair>
+        <div class=label>23. Jurisdiction:</div>
         <jurisdiction-box name=21. style="{w-21.}"></jurisdiction-box>
-      </div>
-      <div class=pair>
-        <label for=22.>24. Incident Name:</label>
-        <input id=22. name=22. required style="{{w-22.}}">
-      </div>
+      </label>
+      <label class=pair>
+        <div class=label>24. Incident Name:</div>
+        <input name=22. required style="{{w-22.}}">
+      </label>
     </div>
     <div class=layout-pair>
       <div class=pair>
@@ -43,29 +44,29 @@
           <label style="order:3"><input type=radio name=24. value=Monitor>e. Monitor</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=25.>27. Incident Description:</label>
-        <textarea id=25. name=25. style="{{w-25.}}"></textarea>
-      </div>
-      <div class=pair>
-        <label for=26.>28. Additional Incident<br>Information:</label>
-        <textarea id=26. name=26. style="{{w-26.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>27. Incident Description:</div>
+        <textarea name=25. style="{{w-25.}}"></textarea>
+      </label>
+      <label class=pair>
+        <div class=label>28. Additional Incident<br>Information:</div>
+        <textarea name=26. style="{{w-26.}}"></textarea>
+      </label>
     </div>
     <div class=section>Reported By</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
-      <div class=pair>
-        <label for=30.>31. Prepared By:</label>
-        <input id=30. name=30. style="{{w-30.}}">
-      </div>
-      <div class=pair>
-        <label for=31.>32. Contact Number:</label>
-        <input id=31. name=31. class=phone-number style="{{w-31.}}">
-      </div>
-      <div class="pair colspan4">
-        <label for=32.>33. Email:</label>
-        <input id=32. name=32. class=colspan3 style="{{w-32.}}">
-      </div>
+      <label class=pair>
+        <div class=label>31. Prepared By:</div>
+        <input name=30. style="{{w-30.}}">
+      </label>
+      <label class=pair>
+        <div class=label>32. Contact Number:</div>
+        <input name=31. class=phone-number style="{{w-31.}}">
+      </label>
+      <label class="pair colspan4">
+        <div class=label>33. Email:</div>
+        <input name=32. class=colspan3 style="{{w-32.}}">
+      </label>
     </div>
     <div class=section>Government Office Status</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
@@ -77,41 +78,41 @@
           <label><input type=radio name=50. value=Closed>Closed</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=51d.>42. Expected to Open Date:</label>
-        <input id=51d. name=51d. class=date style="{{w-51d.}}">
-      </div>
-      <div class=pair>
-        <label for=51t.>43. Time:</label>
-        <input id=51t. name=51t. class=time required-if=51d. else-disallowed style="{{w-51t.}}">
-      </div>
-      <div class=pair>
-        <label for=52d.>44. Expected to Close Date:</label>
-        <input id=52d. name=52d. class=date style="{{w-52d.}}">
-      </div>
-      <div class=pair>
-        <label for=52t.>45. Time:</label>
-        <input id=52t. name=52t. class=time required-if=52d. else-disallowed style="{{w-52t.}}">
-      </div>
+      <label class=pair>
+        <div class=label>42. Expected to Open Date:</div>
+        <input name=51d. class=date style="{{w-51d.}}">
+      </label>
+      <label class=pair>
+        <div class=label>43. Time:</div>
+        <input name=51t. class=time required-if=51d. else-disallowed style="{{w-51t.}}">
+      </label>
+      <label class=pair>
+        <div class=label>44. Expected to Close Date:</div>
+        <input name=52d. class=date style="{{w-52d.}}">
+      </label>
+      <label class=pair>
+        <div class=label>45. Time:</div>
+        <input name=52t. class=time required-if=52d. else-disallowed style="{{w-52t.}}">
+      </label>
     </div>
     <div class=section>Approved By</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
-      <div class=pair>
-        <label for=60.>51. Approved By:</label>
-        <input id=60. name=60. style="{{w-60.}}">
-      </div>
-      <div class=pair>
-        <label for=61.>52. Contact Phone:</label>
-        <input id=61. name=61. class=phone-number style="{{w-61.}}">
-      </div>
-      <div class=pair>
-        <label for=62.>53. ICS Position:</label>
-        <input id=62. name=62. style="{{w-62.}}">
-      </div>
-      <div class=pair>
-        <label for=63.>54. Location:</label>
-        <input id=63. name=63. style="{{w-63.}}">
-      </div>
+      <label class=pair>
+        <div class=label>51. Approved By:</div>
+        <input name=60. style="{{w-60.}}">
+      </label>
+      <label class=pair>
+        <div class=label>52. Contact Phone:</div>
+        <input name=61. class=phone-number style="{{w-61.}}">
+      </label>
+      <label class=pair>
+        <div class=label>53. ICS Position:</div>
+        <input name=62. style="{{w-62.}}">
+      </label>
+      <label class=pair>
+        <div class=label>54. Location:</div>
+        <input name=63. style="{{w-63.}}">
+      </label>
     </div>
     <div class=section>Current Situation</div>
     <div class=layout-grid style="--columns: max-content max-content 1fr">
@@ -125,10 +126,10 @@
           <label><input type=radio name=70a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=70b.>61b. Comments:</label>
-        <textarea id=70b. name=70b. style="{{w-70b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>61b. Comments:</div>
+        <textarea name=70b. style="{{w-70b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Debris</div>
       <div class=pair>
         <div class=label>62a. Status:</div>
@@ -139,10 +140,10 @@
           <label><input type=radio name=71a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=71b.>62b. Comments:</label>
-        <textarea id=71b. name=71b. style="{{w-71b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>62b. Comments:</div>
+        <textarea name=71b. style="{{w-71b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Flooding</div>
       <div class=pair>
         <div class=label>63a. Status:</div>
@@ -153,10 +154,10 @@
           <label><input type=radio name=72a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=72b.>63b. Comments:</label>
-        <textarea id=72b. name=72b. style="{{w-72b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>63b. Comments:</div>
+        <textarea name=72b. style="{{w-72b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">HazMat</div>
       <div class=pair>
         <div class=label>64a. Status:</div>
@@ -167,10 +168,10 @@
           <label><input type=radio name=73a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=73b.>64b. Comments:</label>
-        <textarea id=73b. name=73b. style="{{w-73b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>64b. Comments:</div>
+        <textarea name=73b. style="{{w-73b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Emergency Services</div>
       <div class=pair>
         <div class=label>65a. Status:</div>
@@ -181,10 +182,10 @@
           <label><input type=radio name=74a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=74b.>65b. Comments:</label>
-        <textarea id=74b. name=74b. style="{{w-74b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>65b. Comments:</div>
+        <textarea name=74b. style="{{w-74b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Casualties</div>
       <div class=pair>
         <div class=label>66a. Status:</div>
@@ -195,10 +196,10 @@
           <label><input type=radio name=75a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=75b.>66b. Comments:</label>
-        <textarea id=75b. name=75b. style="{{w-75b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>66b. Comments:</div>
+        <textarea name=75b. style="{{w-75b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Utilities (Gas)</div>
       <div class=pair>
         <div class=label>67a. Status:</div>
@@ -209,10 +210,10 @@
           <label><input type=radio name=76a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=76b.>67b. Comments:</label>
-        <textarea id=76b. name=76b. style="{{w-76b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>67b. Comments:</div>
+        <textarea name=76b. style="{{w-76b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Utilities (Electric)</div>
       <div class=pair>
         <div class=label>68a. Status:</div>
@@ -223,10 +224,10 @@
           <label><input type=radio name=77a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=77b.>68b. Comments:</label>
-        <textarea id=77b. name=77b. style="{{w-77b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>68b. Comments:</div>
+        <textarea name=77b. style="{{w-77b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Infrastructure (Power)</div>
       <div class=pair>
         <div class=label>69a. Status:</div>
@@ -237,10 +238,10 @@
           <label><input type=radio name=78a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=78b.>69b. Comments:</label>
-        <textarea id=78b. name=78b. style="{{w-78b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>69b. Comments:</div>
+        <textarea name=78b. style="{{w-78b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Infrastructure (Water)</div>
       <div class=pair>
         <div class=label>70a. Status:</div>
@@ -251,10 +252,10 @@
           <label><input type=radio name=79a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=79b.>70b. Comments:</label>
-        <textarea id=79b. name=79b. style="{{w-79b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>70b. Comments:</div>
+        <textarea name=79b. style="{{w-79b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Infrastructure (Sewer)</div>
       <div class=pair>
         <div class=label>71a. Status:</div>
@@ -265,10 +266,10 @@
           <label><input type=radio name=80a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=80b.>71b. Comments:</label>
-        <textarea id=80b. name=80b. style="{{w-80b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>71b. Comments:</div>
+        <textarea name=80b. style="{{w-80b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Search and Rescue</div>
       <div class=pair>
         <div class=label>72a. Status:</div>
@@ -279,10 +280,10 @@
           <label><input type=radio name=81a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=81b.>72b. Comments:</label>
-        <textarea id=81b. name=81b. style="{{w-81b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>72b. Comments:</div>
+        <textarea name=81b. style="{{w-81b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Transportation (Roads)</div>
       <div class=pair>
         <div class=label>73a. Status:</div>
@@ -293,10 +294,10 @@
           <label><input type=radio name=82a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=82b.>73b. Comments:</label>
-        <textarea id=82b. name=82b. style="{{w-82b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>73b. Comments:</div>
+        <textarea name=82b. style="{{w-82b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Transportation (Bridges)</div>
       <div class=pair>
         <div class=label>74a. Status:</div>
@@ -307,10 +308,10 @@
           <label><input type=radio name=83a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=83b.>74b. Comments:</label>
-        <textarea id=83b. name=83b. style="{{w-83b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>74b. Comments:</div>
+        <textarea name=83b. style="{{w-83b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Civil Unrest</div>
       <div class=pair>
         <div class=label>75a. Status:</div>
@@ -321,10 +322,10 @@
           <label><input type=radio name=84a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=84b.>75b. Comments:</label>
-        <textarea id=84b. name=84b. style="{{w-84b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>75b. Comments:</div>
+        <textarea name=84b. style="{{w-84b.}}"></textarea>
+      </label>
       <div class="subsec rowspan2">Animal Issues</div>
       <div class=pair>
         <div class=label>76a. Status:</div>
@@ -335,10 +336,10 @@
           <label><input type=radio name=85a. value=Unknown>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=85b.>76b. Comments:</label>
-        <textarea id=85b. name=85b. style="{{w-85b.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>76b. Comments:</div>
+        <textarea name=85b. style="{{w-85b.}}"></textarea>
+      </label>
     </div>
     <div class=section>Lifeline Status</div>
     <div class="layout-pair">
@@ -351,14 +352,14 @@
           <label><input type=radio name=90. value=Unknown required>Unknown</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=91.>82. Update:</label>
-        <textarea id=91. name=91. required style="{{w-91.}}"></textarea>
-      </div>
-      <div class=pair>
-        <label for=92.>83. Unmet Needs:</label>
-        <textarea id=92. name=92. required style="{{w-92.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>82. Update:</div>
+        <textarea name=91. required style="{{w-91.}}"></textarea>
+      </label>
+      <label class=pair>
+        <div class=label>83. Unmet Needs:</div>
+        <textarea name=92. required style="{{w-92.}}"></textarea>
+      </label>
     </div>
   </form-roo>
 </packet-form>

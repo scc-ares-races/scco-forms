@@ -3,15 +3,19 @@
   style="Control style" class="Control class name">
   <div class="combobox combobox-list {{class}}">
     <div class="group">
-      <input id="{{name}}-input" {{name}} class="cb_edit" {{placeholder}} {{required}} {{style}} role="combobox" aria-autocomplete="both" aria-expanded="false" aria-controls="{{name}}-listbox">
+      <input id="{{name}}-input" {{name}} class="cb_edit" {{placeholder}} {{required}} {{style}} role="combobox"
+        aria-autocomplete="both" aria-expanded="false" aria-controls="{{name}}-listbox">
       <button type="button" id="{{name}}-button" aria-expanded="false" aria-controls="{{name}}-listbox" tabindex="-1">
         <svg width="18" height="16" aria-hidden="true" focusable="false" style="forced-color-adjust: auto">
-          <polygon class="arrow" stroke-width="0" fill-opacity="0.75" fill="currentcolor" points="3,6 15,6 9,14"></polygon>
+          <polygon class="arrow" stroke-width="0" fill-opacity="0.75" fill="currentcolor" points="3,6 15,6 9,14">
+          </polygon>
         </svg>
       </button>
     </div>
     <ul id="{{name}}-listbox" role="listbox">
-      <for:options><li role="option">{{.}}</li></for:options>
+      <for:options>
+        <li role="option">{{.}}</li>
+      </for:options>
     </ul>
   </div>
 </def:combo-box>
@@ -53,14 +57,14 @@
   </div>
   <div id=form-header-roo>
     <div class=section-inline>Radio Operator Only:</div>
-    <div class=pair>
-      <label for=MsgNo>1. Origin Msg #:</label>
-      <input id=MsgNo name=MsgNo class=message-number required style={{w-MsgNo}}>
-    </div>
-    <div class=pair>
-      <label for=DestMsgNo>2. Destination Msg #:</label>
-      <input id=DestMsgNo name=DestMsgNo class=message-number disabled style={{w-DestMsgNo}}>
-    </div>
+    <label class=pair>
+      <div class=label>1. Origin Msg #:</div>
+      <input name=MsgNo class=message-number required style={{w-MsgNo}}>
+    </label>
+    <label class=pair>
+      <div class=label>2. Destination Msg #:</div>
+      <input name=DestMsgNo class=message-number disabled style={{w-DestMsgNo}}>
+    </label>
   </div>
   <div class=border-thick>
     <slot></slot>
@@ -68,32 +72,32 @@
   <div id=form-footer-relay>
     <div class="section-inline colspan5">Radio Operator Only:</div>
     <div class=section-inline>Relay:</div>
-    <div class=pair>
-      <label for=OpRelayRcvd>Rcvd:</label>
-      <input id=OpRelayRcvd name=OpRelayRcvd style={{w-OpRelayRcvd}}>
-    </div>
-    <div class=pair>
-      <label for=OpRelaySent>Sent:</label>
-      <input id=OpRelaySent name=OpRelaySent style={{w-OpRelaySent}}>
-    </div>
+    <label class=pair>
+      <div class=label>Rcvd:</div>
+      <input name=OpRelayRcvd style={{w-OpRelayRcvd}}>
+    </label>
+    <label class=pair>
+      <div class=label>Sent:</div>
+      <input name=OpRelaySent style={{w-OpRelaySent}}>
+    </label>
   </div>
   <div id=form-footer-opinfo>
-    <div class=pair>
-      <label for=OpName>Name:</label>
-      <input id=OpName name=OpName required style={{w-OpName}}>
-    </div>
-    <div class=pair>
-      <label for=OpCall>Call Sign:</label>
-      <input id=OpCall name=OpCall class=call-sign required style={{w-OpCall}}>
-    </div>
-    <div class=pair>
-      <label for=OpDate>Date:</label>
-      <input id=OpDate name=OpDate class=date style={{w-OpDate}}>
-    </div>
-    <div class=pair>
-      <label for=OpTime>Time <span class=annotation>(24hr)</span>:</label>
-      <input id=OpTime name=OpTime class=time style={{w-OpTime}}>
-    </div>
+    <label class=pair>
+      <div class=label>Name:</div>
+      <input name=OpName required style={{w-OpName}}>
+    </label>
+    <label class=pair>
+      <div class=label>Call Sign:</div>
+      <input name=OpCall class=call-sign required style={{w-OpCall}}>
+    </label>
+    <label class=pair>
+      <div class=label>Date:</div>
+      <input name=OpDate class=date style={{w-OpDate}}>
+    </label>
+    <label class=pair>
+      <div class=label>Time <span class=annotation>(24hr)</span>:</div>
+      <input name=OpTime class=time style={{w-OpTime}}>
+    </label>
   </div>
 </def:form-roo>
 
@@ -101,14 +105,14 @@
   to-ics-positions="Semicolon-separated list of possibilities for To ICS Position"
   to-locations="Semicolon-separated list of possibilities for To Location" mdstyle mtstyle tostyle frstyle>
   <div class=layout-grid style="--columns: max-content 1fr max-content 1fr max-content max-content">
-    <div class=pair>
-      <label for=1a.>3. Date:</label>
-      <input id=1a. name=1a. class=date required style={{w-1a.}}>
-    </div>
-    <div class=pair>
-      <label for=1b.>4. Time:</label>
-      <input id=1b. name=1b. class=time required style={{w-1b.}}>
-    </div>
+    <label class=pair>
+      <div class=label>3. Date:</div>
+      <input name=1a. class=date required style={{w-1a.}}>
+    </label>
+    <label class=pair>
+      <div class=label>4. Time:</div>
+      <input name=1b. class=time required style={{w-1b.}}>
+    </label>
     <div class=pair>
       <div class=label>5. Handling:</div>
       <div class="layout-horizontal colgap required-group">
@@ -131,59 +135,59 @@
     <div class=to-from style="grid-area:1/1/6/2">TO</div>
     <div class=to-from style="grid-area:1/4/6/5">FROM</div>
     <if:show-addrs>
-      <div class=pair style="grid-area:1/2/2/4">
-        <label for=ToAddr>Address:</label>
-        <input id=ToAddr name=ToAddr required>
-      </div>
+      <label class=pair style="grid-area:1/2/2/4">
+        <div class=label>Address:</div>
+        <input name=ToAddr required>
+      </label>
     </if:show-addrs>
-    <div class=pair style="grid-area:2/2/3/4">
-      <label for=7a.>6. ICS Position:</label>
+    <label class=pair style="grid-area:2/2/3/4">
+      <div class=label>6. ICS Position:</div>
       <if:to-ics-positions>
         <combo-box name=7a. required options={{to-ics-positions}} style={{w-7a.}}></combo-box>
       </if:to-ics-positions>
       <ifnot:to-ics-positions>
-        <input id=7a. name=7a. required style={{w-7a.}}>
+        <input name=7a. required style={{w-7a.}}>
       </ifnot:to-ics-positions>
-    </div>
-    <div class=pair style="grid-area:3/2/4/4">
-      <label for=7b.>7. Location:</label>
+    </label>
+    <label class=pair style="grid-area:3/2/4/4">
+      <div class=label>7. Location:</div>
       <if:to-locations>
         <combo-box name=7b. required options={{to-locations}} style={{w-7b.}}></combo-box>
       </if:to-locations>
       <ifnot:to-locations>
-        <input id=7b. name=7b. required style={{w-7b.}}>
+        <input name=7b. required style={{w-7b.}}>
       </ifnot:to-locations>
-    </div>
-    <div class=pair style="grid-area:4/2/5/4">
-      <label for=7c.>8. Name:</label>
-      <input id=7c. name=7c. style={{w-7c.}}>
-    </div>
-    <div class=pair style="grid-area:5/2/6/4">
-      <label for=7d.>9. Contact Info:</label>
-      <input id=7d. name=7d. style={{w-7d.}}>
-    </div>
+    </label>
+    <label class=pair style="grid-area:4/2/5/4">
+      <div class=label>8. Name:</div>
+      <input name=7c. style={{w-7c.}}>
+    </label>
+    <label class=pair style="grid-area:5/2/6/4">
+      <div class=label>9. Contact Info:</div>
+      <input name=7d. style={{w-7d.}}>
+    </label>
     <if:show-addrs>
-      <div class=pair style="grid-area:1/5/2/7">
-        <label for=FromAddr>Address:</label>
-        <input id=FromAddr name=FromAddr readonly>
-      </div>
+      <label class=pair style="grid-area:1/5/2/7">
+        <div class=label>Address:</div>
+        <input name=FromAddr readonly>
+      </label>
     </if:show-addrs>
-    <div class=pair style="grid-area:2/5/3/7">
-      <label for=8a.>10. ICS Position:</label>
-      <input id=8a. name=8a. required style={{w-8a.}}>
-    </div>
-    <div class=pair style="grid-area:3/5/4/7">
-      <label for=8b.>11. Location:</label>
-      <input id=8b. name=8b. required style={{w-8b.}}>
-    </div>
-    <div class=pair style="grid-area:4/5/5/7">
-      <label for=8c.>12. Name:</label>
-      <input id=8c. name=8c. style={{w-8c.}}>
-    </div>
-    <div class=pair style="grid-area:5/5/6/7">
-      <label for=8d.>13. Contact Info:</label>
-      <input id=8d. name=8d. style={{w-8d.}}>
-    </div>
+    <label class=pair style="grid-area:2/5/3/7">
+      <div class=label>10. ICS Position:</div>
+      <input name=8a. required style={{w-8a.}}>
+    </label>
+    <label class=pair style="grid-area:3/5/4/7">
+      <div class=label>11. Location:</div>
+      <input name=8b. required style={{w-8b.}}>
+    </label>
+    <label class=pair style="grid-area:4/5/5/7">
+      <div class=label>12. Name:</div>
+      <input name=8c. style={{w-8c.}}>
+    </label>
+    <label class=pair style="grid-area:5/5/6/7">
+      <div class=label>13. Contact Info:</div>
+      <input name=8d. style={{w-8d.}}>
+    </label>
   </div>
 </def:form-dthtf>
 
@@ -215,362 +219,15 @@
   </table>
 </def:the-form>
 
-<def:scco-header form-title="Title to put in the top banner.  Required."
-  form-version="Form version number to put in the top banner.  Required."
-  paper-version="Paper form version number or date to put in the top banner."
-  show-addrs="True if the form should have To/From Address fields."
-  to-ics-positions="Semicolon-separated list of possibilities for To ICS Position"
-  to-locations="Semicolon-separated list of possibilities for To Location">
-  <table id="scco-banner" class="block-caption noborder">
-    <tr>
-      <td style="border:none;padding:4pt 4pt;">
-        <span style="font-size:150%;">{{form-title}}</span>
-        <br>
-      </td>
-      <td style="border:none;padding:2pt 4pt;text-align:right;vertical-align:bottom;">
-        <span style="font-weight:normal;">PIF: {{form-version}}<br>{{paper-version}}</span>
-      </td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <td style="white-space:nowrap;width:1px;">
-        <b>Message Numbers:</b>
-      </td>
-      <td>
-        <b>Origin:</b>
-        <input type=text name=MsgNo class="message-number no-msg-init" tabindex=1 required>
-      </td>
-      <td>
-        <b>Destination:</b>
-        <input type=text name=DestMsgNo class=message-number disabled tabindex=2>
-      </td>
-    </tr>
-  </table>
-  <table>
-    <tr>
-      <td>
-        <b>Date:</b>
-        <input type=text name="1a." class=date required tabindex=3>
-      </td>
-      <td>
-        <b>Time:</b>
-        <input type=text name="1b." class=time required tabindex=4>
-      </td>
-      <td class="label-sameline">
-        <b>Handling:</b>
-        <div class=required-group style="margin-left:0.5em;padding-left:0;padding-right:0.5em;">
-          <label>
-            <input type=radio name="5." tabindex=5 required value=IMMEDIATE>Immediate
-            <span style="font-weight:normal;">(ASAP)</span>
-          </label>
-          <label style="margin-left:1em;margin-right:1em;">
-            <input type=radio name="5." tabindex=6 required value=PRIORITY>Priority
-            <span style="font-weight:normal;">(&lt;1 hr)</span>
-          </label>
-          <label>
-            <input type=radio name="5." tabindex=7 required value=ROUTINE>Routine
-            <span style="font-weight:normal;">(&lt;2 hrs)</span>
-          </label>
-        </div>
-      </td>
-    </tr>
-  </table>
-  <if:show-addrs>
-    <table id="form-row-3">
-      <tr>
-        <td rowspan=5 class=block-caption style="width:1px;">
-          T<br />O
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Address:</th>
-              <td><input type=text name=ToAddr tabindex=8 required></td>
-            </tr>
-          </table>
-        </td>
-        <td rowspan=5 class=block-caption style="width:1px;">
-          F<br />R<br />O<br />M
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Address:</th>
-              <td><input type=text name=FromAddr readonly tabindex=12></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>ICS Position:</th>
-              <td style="padding-right:0;">
-                <if:to-ics-positions>
-                  <combo-box name="7a." tabindex=8 required options={{to-ics-positions}}></combo-box>
-                </if:to-ics-positions>
-                <ifnot:to-ics-positions>
-                  <input type=text name="7a." tabindex=8 required>
-                </ifnot:to-ics-positions>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>ICS Position:</th>
-              <td><input type=text name="8a." required tabindex=12></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Location:</th>
-              <td style="padding-right:0;">
-                <if:to-locations>
-                  <combo-box name="7b." tabindex=9 required options={{to-locations}}></combo-box>
-                </if:to-locations>
-                <ifnot:to-locations>
-                  <input type=text name="7b." tabindex=9 required>
-                </ifnot:to-locations>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Location:</th>
-              <td><input type=text name="8b." required tabindex=13></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Name:</th>
-              <td><input type=text name="7c." tabindex=10></td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Name:</th>
-              <td><input type=text name="8c." tabindex=14></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Contact Info:</th>
-              <td><input type=text name="7d." tabindex=11></td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Contact Info:</th>
-              <td><input type=text name="8d." tabindex=15></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </if:show-addrs>
-  <ifnot:show-addrs>
-    <table id="form-row-3">
-      <tr>
-        <td rowspan=4 class=block-caption style="width:1px;">
-          T<br />O
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>ICS Position:</th>
-              <td style="padding-right:0;">
-                <if:to-ics-positions>
-                  <combo-box name="7a." tabindex=8 required options={{to-ics-positions}}></combo-box>
-                </if:to-ics-positions>
-                <ifnot:to-ics-positions>
-                  <input type=text name="7a." tabindex=8 required>
-                </ifnot:to-ics-positions>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td rowspan=4 class=block-caption style="width:1px;">
-          F<br />R<br />O<br />M
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>ICS Position:</th>
-              <td><input type=text name="8a." required tabindex=12></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Location:</th>
-              <td style="padding-right:0;">
-                <if:to-locations>
-                  <combo-box name="7b." tabindex=9 required options={{to-locations}}></combo-box>
-                </if:to-locations>
-                <ifnot:to-locations>
-                  <input type=text name="7b." tabindex=9 required>
-                </ifnot:to-locations>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Location:</th>
-              <td><input type=text name="8b." required tabindex=13></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Name:</th>
-              <td><input type=text name="7c." tabindex=10></td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Name:</th>
-              <td><input type=text name="8c." tabindex=14></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Contact Info:</th>
-              <td><input type=text name="7d." tabindex=11></td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Contact Info:</th>
-              <td><input type=text name="8d." tabindex=15></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </ifnot:show-addrs>
-</def:scco-header>
-
-<def:scco-footer>
-  <div style="page-break-inside:avoid;">
-    <table class=border style="border:1px solid #aaaaaa;">
-      <tr class=block-caption>
-        <td colspan=3>Radio Operator Only:</td>
-      </tr>
-      <tr>
-        <td class=block-caption style="width:1px;">Relay:</td>
-        <td style="width:50%">
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Rcvd:</th>
-              <td><input type=text name=OpRelayRcvd tabindex=500></td>
-            </tr>
-          </table>
-        </td>
-        <td style="width:50%">
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Sent:</th>
-              <td><input type=text name=OpRelaySent tabindex=501></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td style="padding-right:0;">
-          <table class=same-line-label-layout>
-            <tr>
-              <th>Name:</th>
-              <td><input type=text name=OpName class="no-msg-init include-in-submit" tabindex=502
-                  style="margin-right:0;"></td>
-            </tr>
-          </table>
-        </td>
-        <td>
-          <b>Call Sign:</b>
-          <input type=text name=OpCall class="no-msg-init include-in-submit call-sign" tabindex=503 required>
-        </td>
-        <td>
-          <b>Date:</b>
-          <input type=text name=OpDate class="date no-msg-init init-on-submit" tabindex=504 readonly>
-        </td>
-        <td>
-          <b>Time:</b>
-          <input type=text name=OpTime class="time no-msg-init init-on-submit" tabindex=505 readonly>
-        </td>
-      </tr>
-    </table>
-  </div>
-</def:scco-footer>
-
-<def:jurisdiction-box name="Input control name for the jurisdiction field.  Required."
-  class="CSS class" style="CSS style">
+<def:jurisdiction-box name="Input control name for the jurisdiction field.  Required." class="CSS class"
+  style="CSS style">
   <combo-box {{name}} {{class}} {{style}} placeholder="Select one..." required
     options="Campbell; Cupertino; Gilroy; Los Altos; Los Altos Hills; Los Gatos; Milpitas; Monte Sereno; Morgan Hill; Mountain View; Palo Alto; San Jose; Santa Clara (City); Saratoga; Sunnyvale; Santa Clara County; County unincorporated">
   </combo-box>
 </def:jurisdiction-box>
 
-<def:hospital-box name="Input control name for the hospital field.  Required."
-  class="CSS class" style="CSS style">
+<def:hospital-box name="Input control name for the hospital field.  Required." class="CSS class" style="CSS style">
   <combo-box {{name}} {{class}} {{style}} placeholder="Select one..." required
     options="El Camino Hospital Los Gatos; El Camino Hospital Mountain View; Good Samaritan Hospital; Kaiser San Jose Medical Center; Kaiser Santa Clara Hospital; Lucile Packard Children's Hospital; O'Connor Hospital; Palo Alto Veterans Hospital; Regional San Jose Medical Center; Saint Louise Regional Hospital; Stanford Hospital; Stanford School of Medicine; Valley Medical Center">
   </combo-box>
 </def:hospital-box>
-
-<def:select-hospital>
-  <select name=20. style="width:auto;" required tabindex=20>
-    <option value="" disabled selected>Select a Hospital ...</option>
-    <option value="El Camino Hospital Los Gatos">El Camino Hospital Los Gatos</option>
-    <option value="El Camino Hospital Mountain View">El Camino Hospital Mountain View</option>
-    <option value="Good Samaritan Hospital">Good Samaritan Hospital</option>
-    <option value="Kaiser San Jose Medical Center">Kaiser San Jose Medical Center</option>
-    <option value="Kaiser Santa Clara Hospital">Kaiser Santa Clara Hospital</option>
-    <option value="Lucile Packard Children's Hospital">Lucile Packard Children's Hospital</option>
-    <option value="O'Connor Hospital">O'Connor Hospital</option>
-    <option value="Palo Alto Veterans Hospital">Palo Alto Veterans Hospital</option>
-    <option value="Regional San Jose Medical Center">Regional San Jose Medical Center</option>
-    <option value="Saint Louise Regional Hospital">Saint Louise Regional Hospital</option>
-    <option value="Stanford Hospital">Stanford Hospital</option>
-    <option value="Stanford School of Medicine">Stanford School of Medicine</option>
-    <option value="Valley Medical Center">Valley Medical Center</option>
-  </select>
-</def:select-hospital>

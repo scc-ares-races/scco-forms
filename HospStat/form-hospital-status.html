@@ -7,10 +7,10 @@
     <form-dthtf to-ics-positions="EMS Unit; Medical Health Branch; Operations Section"
       to-locations="PHDOC; County EOC"></form-dthtf>
     <div class="layout-pair">
-      <div class="pair">
-        <label for=20.>14. Hospital Name:</label>
+      <label class="pair">
+        <div class=label>14. Hospital Name:</div>
         <hospital-box name=20. style="{{w-20.}}"></hospital-box>
-      </div>
+      </label>
     </div>
     <div class=section>Hospital Status</div>
     <div class=layout-grid style="--columns: repeat(4, max-content) 1fr">
@@ -23,10 +23,10 @@
         <label><input type=radio name=12.1. value="Internal Disaster">b. Internal Disaster</label>
         <label><input type=radio name=12.1. value="Specialty Bypass">d. Specialty Bypass</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.1c.>f. Comment:</label>
-        <input id=12.1c. name=12.1c. class=colspan3 style="{{w-12.1c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label>f. Comment:</div>
+        <input name=12.1c. class=colspan3 style="{{w-12.1c.}}">
+      </label>
       <div class="subsec rowspan3">22. Decon</div>
       <div class="border subgrid colspan4 rowspan2 colgap">
         <div class="rowspan2 annotation">(Pick One)</div>
@@ -35,10 +35,10 @@
         <label><input type=radio name=12.2. value=Active>d. Active</label>
         <label><input type=radio name=12.2. value=Available>b. Available</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.2c.>e. Comment:</label>
-        <input id=12.2c. name=12.2c. class=colspan3 style="{{w-12.2c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label>e. Comment:</div>
+        <input name=12.2c. class=colspan3 style="{{w-12.2c.}}">
+      </label>
       <div class="subsec rowspan2">23. Command Ctr</div>
       <div class="border subgrid colspan4 colgap">
         <div class=annotation>(Pick One)</div>
@@ -46,10 +46,10 @@
         <label><input type=radio name=12.3. value=Monitoring>b. Monitoring</label>
         <label><input type=radio name=12.3. value="Not Activated">c. Not Activated</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.3c.>d. Comment:</label>
-        <input id=12.3c. name=12.3c. class=colspan3 style="{{w-12.3c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.3c.>d. Comment:</div>
+        <input name=12.3c. class=colspan3 style="{{w-12.3c.}}">
+      </label>
       <div class="subsec rowspan2">24. Morgue</div>
       <div class="border subgrid colspan4 colgap">
         <div class=annotation>(Pick One)</div>
@@ -57,10 +57,10 @@
         <label><input type=radio name=12.4. value=Open>b. Open</label>
         <label><input type=radio name=12.4. value=Full>c. Full</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.4c.>d. Comment:</label>
-        <input id=12.4c. name=12.4c. class=colspan3 style="{{w-12.4c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.4c.>d. Comment:</div>
+        <input name=12.4c. class=colspan3 style="{{w-12.4c.}}">
+      </label>
       <div class="subsec rowspan4">25. Power</div>
       <div class="border subgrid colspan4 rowspan2 colgap">
         <div class="rowspan2 annotation">(Pick One)</div>
@@ -69,14 +69,14 @@
         <label><input type=radio name=12.5. value=Generator>d. Generator</label>
         <label><input type=radio name=12.5. value=None>b. None</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.5f. class=colspan2>e. Hours of Fuel Remaining:</label>
-        <input id=12.5f. name=12.5f. class=colspan2 style="{{w-12.5f.}}">
-      </div>
-      <div class="pair colspan4">
-        <label for=12.5c.>f. Comment:</label>
-        <input id=12.5c. name=12.5c. class=colspan3 style="{{w-12.5c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class="label colspan2">e. Hours of Fuel Remaining:</div>
+        <input name=12.5f. class=colspan2 style="{{w-12.5f.}}">
+      </label>
+      <label class="pair colspan4">
+        <div class=label for=12.5c.>f. Comment:</div>
+        <input name=12.5c. class=colspan3 style="{{w-12.5c.}}">
+      </label>
       <div class="subsec rowspan4">26. Building</div>
       <div class="border subgrid colspan4 rowspan3 colgap">
         <div class="rowspan3 annotation">(Pick One)</div>
@@ -90,10 +90,10 @@
         <label><input type=radio name=12.6. value=Evacuating>f. Evacuating</label>
         <label><input type=radio name=12.6. value=Closed>i. Closed</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.6c.>j. Comment:</label>
-        <input id=12.6c. name=12.6c. class=colspan3 style="{{w-12.6c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.6c.>j. Comment:</div>
+        <input name=12.6c. class=colspan3 style="{{w-12.6c.}}">
+      </label>
       <div class="subsec rowspan3">27. Security</div>
       <div class="border subgrid colspan4 rowspan2 colgap">
         <div class="rowspan2 annotation">(Pick One)</div>
@@ -103,10 +103,10 @@
         <label><input type=radio name=12.7. value="Restricted Access">b. Restricted Access</label>
         <label><input type=radio name=12.7. value=Lockdown>d. Lockdown</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.7c.>f. Comment:</label>
-        <input id=12.7c. name=12.7c. class=colspan3 style="{{w-12.7c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.7c.>f. Comment:</div>
+        <input name=12.7c. class=colspan3 style="{{w-12.7c.}}">
+      </label>
       <div class="subsec rowspan2">28. Staffing</div>
       <div class="border subgrid colspan4 colgap">
         <div class=annotation>(Pick One)</div>
@@ -114,10 +114,10 @@
         <label><input type=radio name=12.8. value=Adequate>b. Adequate</label>
         <label><input type=radio name=12.8. value=Insufficient>c. Insufficient</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.8c.>d. Comment:</label>
-        <input id=12.8c. name=12.8c. class=colspan3 style="{{w-12.8c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.8c.>d. Comment:</div>
+        <input name=12.8c. class=colspan3 style="{{w-12.8c.}}">
+      </label>
       <div class="subsec rowspan2">29. Medical Facility<br>Supplies</div>
       <div class="border subgrid colspan4 colgap">
         <div class=annotation>(Pick One)</div>
@@ -125,10 +125,10 @@
         <label><input type=radio name=12.9. value=Adequate>b. Adequate</label>
         <label><input type=radio name=12.9. value=Insufficient>c. Insufficient</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.9c.>d. Comment:</label>
-        <input id=12.9c. name=12.9c. class=colspan3 style="{{w-12.9c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.9c.>d. Comment:</div>
+        <input name=12.9c. class=colspan3 style="{{w-12.9c.}}">
+      </label>
       <div class="subsec rowspan2">30. Clinical<br>Supplies</div>
       <div class="border subgrid colspan4 colgap">
         <div class=annotation>(Pick One)</div>
@@ -136,50 +136,50 @@
         <label><input type=radio name=12.10. value=Adequate>b. Adequate</label>
         <label><input type=radio name=12.10. value=Insufficient>c. Insufficient</label>
       </div>
-      <div class="pair colspan4">
-        <label for=12.10c.>d. Comment:</label>
-        <input id=12.10c. name=12.10c. class=colspan3 style="{{w-12.10c.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=12.10c.>d. Comment:</div>
+        <input name=12.10c. class=colspan3 style="{{w-12.10c.}}">
+      </label>
       <div class=subsec>31. Resource<br>Impacts/Needs:</div>
-      <div class="pair colspan4">
-        <label for=13.>a. Comment:</label>
-        <textarea id=13. name=13. class=colspan3 style="{{w-13.}}"></textarea>
-      </div>
+      <label class="pair colspan4">
+        <div class=label for=13.>a. Comment:</div>
+        <textarea name=13. class=colspan3 style="{{w-13.}}"></textarea>
+      </label>
     </div>
     <div class=section>Patient Flow</div>
     <div class="layout-grid" style="--columns: max-content 1fr max-content 1fr">
-      <div class="pair">
-        <label for=14.6.>41a. Overall Hospital Census —<br>Occupied Beds:</label>
-        <input id=14.6. name=14.6. class=cardinal-number style="{{w-14.6.}}">
-      </div>
-      <div class="pair">
-        <label for=14.10.>41b. Overall Hospital Census —<br>Total Staffed Beds:</label>
-        <input id=14.10. name=14.10. class=cardinal-number style="{{w-14.10.}}">
-      </div>
-      <div class="pair">
-        <label for=14.7.>42. Current ED Census<br>(Patients currently in ED):</label>
-        <input id=14.7. name=14.7. class=cardinal-number style="{{w-14.7.}}">
-      </div>
-      <div class="pair">
-        <label for=14.3.>43. Patients Treated and<br>Released:</label>
-        <input id=14.3. name=14.3. class=cardinal-number style="{{w-14.3.}}">
-      </div>
-      <div class="pair">
-        <label for=14.4.>44. Patients Admitted (Last 12 Hours):</label>
-        <input id=14.4. name=14.4. class=cardinal-number style="{{w-14.4.}}">
-      </div>
-      <div class="pair">
-        <label for=14.5.>45. Patients Not Yet Seen:</label>
-        <input id=14.5. name=14.5. class=cardinal-number style="{{w-14.5.}}">
-      </div>
-      <div class="pair">
-        <label for=14.8.>46. Number of patients boarding:</label>
-        <input id=14.8. name=14.8. class=cardinal-number style="{{w-14.8.}}">
-      </div>
-      <div class="pair">
-        <label for=14.9.>47. Longest boarding time (Hrs):</label>
-        <input id=14.9. name=14.9. class=cardinal-number style="{{w-14.9.}}">
-      </div>
+      <label class="pair">
+        <div class=label>41a. Overall Hospital Census —<br>Occupied Beds:</div>
+        <input name=14.6. class=cardinal-number style="{{w-14.6.}}">
+      </label>
+      <label class="pair">
+        <div class=label>41b. Overall Hospital Census —<br>Total Staffed Beds:</div>
+        <input name=14.10. class=cardinal-number style="{{w-14.10.}}">
+      </label>
+      <label class="pair">
+        <div class=label>42. Current ED Census<br>(Patients currently in ED):</div>
+        <input name=14.7. class=cardinal-number style="{{w-14.7.}}">
+      </label>
+      <label class="pair">
+        <div class=label>43. Patients Treated and<br>Released:</div>
+        <input name=14.3. class=cardinal-number style="{{w-14.3.}}">
+      </label>
+      <label class="pair">
+        <div class=label>44. Patients Admitted (Last 12 Hours):</div>
+        <input name=14.4. class=cardinal-number style="{{w-14.4.}}">
+      </label>
+      <label class="pair">
+        <div class=label>45. Patients Not Yet Seen:</div>
+        <input name=14.5. class=cardinal-number style="{{w-14.5.}}">
+      </label>
+      <label class="pair">
+        <div class=label>46. Number of patients boarding:</div>
+        <input name=14.8. class=cardinal-number style="{{w-14.8.}}">
+      </label>
+      <label class="pair">
+        <div class=label>47. Longest boarding time (Hrs):</div>
+        <input name=14.9. class=cardinal-number style="{{w-14.9.}}">
+      </label>
     </div>
     <div class=section>Clinical Trends / Syndromes:</div>
     <div class="layout-pair">
@@ -211,14 +211,14 @@
           <label><input type=radio name=15.1. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.1c.>b.</label>
-        <input id=15.1c. name=15.1c. allowed-if="15.1.=N" style="{{w-15.1c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.1d.>c.</label>
-        <input id=15.1d. name=15.1d. class=date allowed-if="15.1.=N" style="{{w-15.1d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.1c. allowed-if="15.1.=N" style="{{w-15.1c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.1d. class=date allowed-if="15.1.=N" style="{{w-15.1d.}}">
+      </label>
       <div class=subsec>62. Dialysis</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -227,14 +227,14 @@
           <label><input type=radio name=15.3. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.3c.>b.</label>
-        <input id=15.3c. name=15.3c. allowed-if="15.3.=N" style="{{w-15.3c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.3d.>c.</label>
-        <input id=15.3d. name=15.3d. class=date allowed-if="15.3.=N" style="{{w-15.3d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.3c. allowed-if="15.3.=N" style="{{w-15.3c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.3d. class=date allowed-if="15.3.=N" style="{{w-15.3d.}}">
+      </label>
       <div class=subsec>63. Emergency Department</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -243,14 +243,14 @@
           <label><input type=radio name=15.4. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.4c.>b.</label>
-        <input id=15.4c. name=15.4c. allowed-if="15.4.=N" style="{{w-15.4c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.4d.>c.</label>
-        <input id=15.4d. name=15.4d. class=date allowed-if="15.4.=N" style="{{w-15.4d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.4c. allowed-if="15.4.=N" style="{{w-15.4c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.4d. class=date allowed-if="15.4.=N" style="{{w-15.4d.}}">
+      </label>
       <div class=subsec>64. Neurology</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -259,14 +259,14 @@
           <label><input type=radio name=15.5. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.5c.>b.</label>
-        <input id=15.5c. name=15.5c. allowed-if="15.5.=N" style="{{w-15.5c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.5d.>c.</label>
-        <input id=15.5d. name=15.5d. class=date allowed-if="15.5.=N" style="{{w-15.5d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.5c. allowed-if="15.5.=N" style="{{w-15.5c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.5d. class=date allowed-if="15.5.=N" style="{{w-15.5d.}}">
+      </label>
       <div class=subsec>65. Obstetrics</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -275,14 +275,14 @@
           <label><input type=radio name=15.7. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.7c.>b.</label>
-        <input id=15.7c. name=15.7c. allowed-if="15.7.=N" style="{{w-15.7c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.7d.>c.</label>
-        <input id=15.7d. name=15.7d. class=date allowed-if="15.7.=N" style="{{w-15.7d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.7c. allowed-if="15.7.=N" style="{{w-15.7c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.7d. class=date allowed-if="15.7.=N" style="{{w-15.7d.}}">
+      </label>
       <div class=subsec>66. Obstetrics: Labor & Delivery</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -291,14 +291,14 @@
           <label><input type=radio name=15.8. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.8c.>b.</label>
-        <input id=15.8c. name=15.8c. allowed-if="15.8.=N" style="{{w-15.8c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.8d.>c.</label>
-        <input id=15.8d. name=15.8d. class=date allowed-if="15.8.=N" style="{{w-15.8d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.8c. allowed-if="15.8.=N" style="{{w-15.8c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.8d. class=date allowed-if="15.8.=N" style="{{w-15.8d.}}">
+      </label>
       <div class=subsec>67. Ophthalmology</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -307,14 +307,14 @@
           <label><input type=radio name=15.9. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.9c.>b.</label>
-        <input id=15.9c. name=15.9c. allowed-if="15.9.=N" style="{{w-15.9c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.9d.>c.</label>
-        <input id=15.9d. name=15.9d. class=date allowed-if="15.9.=N" style="{{w-15.9d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.9c. allowed-if="15.9.=N" style="{{w-15.9c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.9d. class=date allowed-if="15.9.=N" style="{{w-15.9d.}}">
+      </label>
       <div class=subsec>68. Orthopedics</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -323,14 +323,14 @@
           <label><input type=radio name=15.10. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.10c.>b.</label>
-        <input id=15.10c. name=15.10c. allowed-if="15.10.=N" style="{{w-15.10c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.10d.>c.</label>
-        <input id=15.10d. name=15.10d. class=date allowed-if="15.10.=N" style="{{w-15.10d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.10c. allowed-if="15.10.=N" style="{{w-15.10c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.10d. class=date allowed-if="15.10.=N" style="{{w-15.10d.}}">
+      </label>
       <div class=subsec>69. Pediatrics</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -339,14 +339,14 @@
           <label><input type=radio name=15.11. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.11c.>b.</label>
-        <input id=15.11c. name=15.11c. allowed-if="15.11.=N" style="{{w-15.11c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.11d.>c.</label>
-        <input id=15.11d. name=15.11d. class=date allowed-if="15.11.=N" style="{{w-15.11d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.11c. allowed-if="15.11.=N" style="{{w-15.11c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.11d. class=date allowed-if="15.11.=N" style="{{w-15.11d.}}">
+      </label>
       <div class=subsec>70. Surgery</div>
       <div class="pair">
         <div class=label>a.</div>
@@ -355,14 +355,14 @@
           <label><input type=radio name=15.12. value=N>No</label>
         </div>
       </div>
-      <div class="pair">
-        <label for=15.12c.>b.</label>
-        <input id=15.12c. name=15.12c. allowed-if="15.12.=N" style="{{w-15.12c.}}">
-      </div>
-      <div class="pair">
-        <label for=15.12d.>c.</label>
-        <input id=15.12d. name=15.12d. class=date allowed-if="15.12.=N" style="{{w-15.12d.}}">
-      </div>
+      <label class="pair">
+        <div class=label>b.</div>
+        <input name=15.12c. allowed-if="15.12.=N" style="{{w-15.12c.}}">
+      </label>
+      <label class="pair">
+        <div class=label>c.</div>
+        <input name=15.12d. class=date allowed-if="15.12.=N" style="{{w-15.12d.}}">
+      </label>
     </div>
     <div class=section>Evacuation</div>
     <div class="layout-pair">
@@ -374,14 +374,14 @@
           &nbsp;&nbsp; (If yes, complete below)
         </div>
       </div>
-      <div class="pair" hidden-until="16.=Y">
-        <label for=16a.>82. Ambulatory Patients to Evacuate:</label>
-        <input id=16a. name=16a. class=cardinal-number allowed-if="16.=Y" style="{{w-16a.}}">
-      </div>
-      <div class="pair" hidden-until="16.=Y">
-        <label for=16b.>83. Non-Ambulatory Patients to Evacuate:</label>
-        <input id=16b. name=16b. class=cardinal-number allowed-if="16.=Y" style="{{w-16b.}}">
-      </div>
+      <label class="pair" hidden-until="16.=Y">
+        <div class=label for=16a.>82. Ambulatory Patients to Evacuate:</div>
+        <input name=16a. class=cardinal-number allowed-if="16.=Y" style="{{w-16a.}}">
+      </label>
+      <label class="pair" hidden-until="16.=Y">
+        <div class=label for=16b.>83. Non-Ambulatory Patients to Evacuate:</div>
+        <input name=16b. class=cardinal-number allowed-if="16.=Y" style="{{w-16b.}}">
+      </label>
     </div>
   </form-roo>
 </packet-form>Ï

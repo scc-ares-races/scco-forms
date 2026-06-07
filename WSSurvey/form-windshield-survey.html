@@ -4,21 +4,22 @@
 <title>Windshield Survey</title>
 <packet-form>
   <form-roo form-title="Windshield Survey" paper-version="PDF: 20260503">
-    <form-dthtf to-ics-positions="Damage/Safety Assessment Group; Construction &amp; Eng. Branch; Operations" to-locations="County EOC"></form-dthtf>
+    <form-dthtf to-ics-positions="Damage/Safety Assessment Group; Construction &amp; Eng. Branch; Operations"
+      to-locations="County EOC"></form-dthtf>
     <div class=section>Overview</div>
     <div class=layout-pair>
-      <div class=pair>
-        <label for=20.>21. Jurisdiction:</label>
-        <jurisdiction-box id=20. name=20. style="{{w-20.}}"></jurisdiction-box>
-      </div>
-      <div class=pair>
-        <label for=21.>22. Team:</label>
-        <input id=21. name=21. required style="{{w-21.}}">
-      </div>
-      <div class=pair>
-        <label for=22.>23. Location:</label>
-        <input id=22. name=22. required style="{{w-22.}}">
-      </div>
+      <label class=pair>
+        <div class=label>21. Jurisdiction:</div>
+        <jurisdiction-box name=20. style="{{w-20.}}"></jurisdiction-box>
+      </label>
+      <label class=pair>
+        <div class=label>22. Team:</div>
+        <input name=21. required style="{{w-21.}}">
+      </label>
+      <label class=pair>
+        <div class=label>23. Location:</div>
+        <input name=22. required style="{{w-22.}}">
+      </label>
       <div class=pair>
         <div class=label>24. Item:</div>
         <div class="layout-horizontal colgap required-group">
@@ -34,7 +35,8 @@
           <label style="order:5"><input type=radio name=24. value=Apartment>c. Apartment</label>
           <label style="order:2"><input type=radio name=24. value=Mobile>d. Mobile Home or Trailer</label>
           <label style="order:4"><input type=radio name=24. value=Business>e. Business</label>
-          <label style="order:6"><input type=radio name=24. value=Other>f. Other <span class=annotation>(describe below)</span></label>
+          <label style="order:6"><input type=radio name=24. value=Other>f. Other <span class=annotation>(describe
+              below)</span></label>
         </div>
       </div>
       <div class=pair>
@@ -46,10 +48,10 @@
           <label style="order:4"><input type=radio name=26. value=Destroyed>Destroyed</label>
         </div>
       </div>
-      <div class=pair>
-        <label for=27.>27. Safety Hazards /<br>Other Damage Observed:</label>
-        <textarea id=27. name=27. style="{{w-27.}}"></textarea>
-      </div>
+      <label class=pair>
+        <div class=label>27. Safety Hazards /<br>Other Damage Observed:</div>
+        <textarea name=27. style="{{w-27.}}"></textarea>
+      </label>
     </div>
   </form-roo>
 </packet-form>

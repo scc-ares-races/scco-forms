@@ -4,25 +4,26 @@
 <title>Resource Request</title>
 <packet-form>
   <form-roo form-title="Resource Request" paper-version="PDF: 20260503">
-    <form-dthtf to-ics-positions="Resource Status &amp; Tracking Unit; Supply Branch; Logistics" to-locations="County EOC"></form-dthtf>
+    <form-dthtf to-ics-positions="Resource Status &amp; Tracking Unit; Supply Branch; Logistics"
+      to-locations="County EOC"></form-dthtf>
     <div class=section>Resource Order</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
-      <div class="pair colspan4">
-        <label for=20.>21. Title:</label>
-        <input id=20. name=20. required class=colspan3 style="{{w-20.}}">
-      </div>
-      <div class="pair colspan4">
-        <label for=21.>22. Requesting Agency:</label>
-        <input id=21. name=21. required class=colspan3 style="{{w-21.}}">
-      </div>
-      <div class=pair>
-        <label for=22d.>23. Date:</label>
-        <input id=22t. name=22d. class=date required style="{{w-22t.}}">
-      </div>
-      <div class=pair>
-        <label for=22t.>24. Time:</label>
-        <input id=22t. name=22t. class=time required style="{{w-22t.}}">
-      </div>
+      <label class="pair colspan4">
+        <div class=label>21. Title:</div>
+        <input name=20. required class=colspan3 style="{{w-20.}}">
+      </label>
+      <label class="pair colspan4">
+        <div class=label>22. Requesting Agency:</div>
+        <input name=21. required class=colspan3 style="{{w-21.}}">
+      </label>
+      <label class=pair>
+        <div class=label>23. Date:</div>
+        <input name=22d. class=date required style="{{w-22t.}}">
+      </label>
+      <label class=pair>
+        <div class=label>24. Time:</div>
+        <input name=22t. class=time required style="{{w-22t.}}">
+      </label>
     </div>
     <div class=layout-pair>
       <def:item>
@@ -30,20 +31,20 @@
           <div class=subsec>Item {{n}}</div>
           <div class=layout-vertical>
             <div class=layout-grid style="--columns: max-content 1fr max-content max-content">
-              <div class=pair>
-                <label for={{id}}n.>3{{n}}a. Item Name:</label>
+              <label class=pair>
+                <div class=label>3{{n}}a. Item Name:</div>
                 <input name={{id}}n. {{required}} style="{{w-23n.}}">
-              </div>
-              <div class=pair>
-                <label for={{id}}q.>3{{n}}b. Quantity Requested:</label>
+              </label>
+              <label class=pair>
+                <div class=label>3{{n}}b. Quantity Requested:</div>
                 <input name={{id}}q. class=cardinal-number required-if={{id}}n. else-disallowed style="{{w-23q.}}">
-              </div>
+              </label>
             </div>
             <div class=layout-pair>
-              <div class=pair>
-                <label for={{id}}d.>3{{n}}c. Description:</label>
+              <label class=pair>
+                <div class=label>3{{n}}c. Description:</div>
                 <textarea name={{id}}d. style="{{w-23d.}}" allowed-if={{id}}n.></textarea>
-              </div>
+              </label>
             </div>
             <div class=layout-pair>
               <div class=pair>
@@ -78,40 +79,40 @@
     </div>
     <div class=section>Requested By Details</div>
     <div class=layout-grid style="--columns: max-content 1fr max-content 1fr">
-      <div class=pair>
-        <label for=40.>51. Requested By Name:</label>
-        <input id=40. name=40. required style="{{w-40.}}">
-      </div>
+      <label class=pair>
+        <div class=label>51. Requested By Name:</div>
+        <input name=40. required style="{{w-40.}}">
+      </label>
       <div class="border colspan2">
         <label style="margin-left:0"><input type=checkbox name=40s. value=checked>52. with signature</label>
       </div>
-      <div class=pair>
-        <label for=41.>53. Requested By Phone:</label>
-        <input id=41. name=41. class=phone-number required style="{{w-41.}}">
-      </div>
-      <div class=pair>
-        <label for=42.>54. Requested By Email:</label>
-        <input id=42. name=42. required style="{{w-42.}}">
-      </div>
-      <div class="pair colspan4">
-        <label for=43.>55. Requested By Position:</label>
-        <input id=43. name=43. class=colspan3 required style="{{w-43.}}">
-      </div>
+      <label class=pair>
+        <div class=label>53. Requested By Phone:</div>
+        <input name=41. class=phone-number required style="{{w-41.}}">
+      </label>
+      <label class=pair>
+        <div class=label>54. Requested By Email:</div>
+        <input name=42. required style="{{w-42.}}">
+      </label>
+      <label class="pair colspan4">
+        <div class=label>55. Requested By Position:</div>
+        <input name=43. class=colspan3 required style="{{w-43.}}">
+      </label>
     </div>
     <div class=section>Incident Details</div>
     <div class=layout-pair>
-      <div class=pair>
-        <label for=51.>61. Name of the Jurisdiction's incident:</label>
-        <input id=51. name=51. style="{{w-51.}}">
-      </div>
-      <div class=pair>
-        <label for=53.>62. Name of the County's incident:</label>
-        <input id=53. name=53. style="{{w-53.}}">
-      </div>
+      <label class=pair>
+        <div class=label>61. Name of the Jurisdiction's incident:</div>
+        <input name=51. style="{{w-51.}}">
+      </label>
+      <label class=pair>
+        <div class=label>62. Name of the County's incident:</div>
+        <input name=53. style="{{w-53.}}">
+      </label>
     </div>
     <div class=section>Comments</div>
-    <div class=border>
+    <label class=border>
       <textarea name=60. style="{{w-60.}}"></textarea>
-    </div>
+    </label>
   </form-roo>
 </packet-form>
